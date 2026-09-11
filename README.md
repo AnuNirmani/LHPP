@@ -1,32 +1,39 @@
-# React + TypeScript + Vite
+# LHP React
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+React/Vite conversion of the supplied Lake House Printers & Publishers static HTML project.
 
-Currently, two official plugins are available:
+## Requirements
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Node.js 20.19+ or 22.12+
 
-## React Compiler
+## Run locally
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the Oxlint configuration
-
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
-
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+```bash
+npm install
+npm run dev
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+Open the local URL shown by Vite (normally `http://localhost:5173`).
+
+## Production build
+
+```bash
+npm run build
+npm run preview
+```
+
+## Structure
+
+- `src/pages/` — one React component per original HTML page
+- `src/content/` — preserved page markup imported by the React components
+- `src/components/LegacyPage.jsx` — shared React rendering/runtime bridge
+- `public/wp-content/`, `public/wp-includes/` — original styles, images, fonts, PDFs and vendor scripts
+- `public/js/contact-form.js` — static contact-form validation/feedback
+
+## Note about the contact form
+
+The supplied source is a static export and has no WordPress backend. The contact form validates in the browser and shows a confirmation, but does not actually send email until you connect it to a backend/API endpoint.
+
+## Routing
+
+The project uses extensionless URLs such as `/about-us`, while still accepting the old `/about-us.html` URL when the host is configured with SPA fallback. Netlify `_redirects` and a Vercel rewrite are included.
