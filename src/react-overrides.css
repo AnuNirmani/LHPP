@@ -11,3 +11,8 @@ body { margin: 0; }
   padding: 0 !important;
 }
 #wpforms-1620-field_1-container input { visibility: hidden; }
+
+.elementor-invisible {
+  visibility: visible !important;
+  opacity: 1 !important;
+}

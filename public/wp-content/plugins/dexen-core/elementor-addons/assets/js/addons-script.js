@@ -128,13 +128,17 @@
             $('.testimonial-one__carousel').owlCarousel({
                 loop: true,
                 margin: 0,
-                nav: false,
+                nav: true,
+                navText: ['<span aria-label="Previous slide">&#10094;</span>', '<span aria-label="Next slide">&#10095;</span>'],
                 dots: true,
+                slideBy: 1,
                 autoWidth: false,
                 autoplay: true,
-                smartSpeed: 700,
+                smartSpeed: 900,
                 autoplayTimeout: 5000,
                 autoplayHoverPause: true,
+                mouseDrag: true,
+                touchDrag: true,
                 responsive: {
                     0: {
                         items: 1

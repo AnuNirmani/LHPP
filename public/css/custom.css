@@ -38,6 +38,42 @@
     left: 0;
 }
 .testimonial-one__carousel{padding-top:60px !important;}
+.testimonial-one__carousel .owl-nav{
+    display:none !important;
+    justify-content:space-between;
+    align-items:center;
+    position:absolute;
+    inset:50% 18px auto;
+    transform:translateY(-50%);
+    pointer-events:none;
+    margin:0 !important;
+}
+.testimonial-one__carousel .owl-nav button.owl-prev,
+.testimonial-one__carousel .owl-nav button.owl-next{
+    width:42px;
+    height:42px;
+    border:0;
+    border-radius:50%;
+    background:#b0812c !important;
+    color:#fff !important;
+    font-size:24px;
+    line-height:42px;
+    pointer-events:auto;
+    transition:background-color .2s ease, transform .2s ease;
+}
+.testimonial-one__carousel .owl-nav button.owl-prev:hover,
+.testimonial-one__carousel .owl-nav button.owl-next:hover{
+    background:#916517 !important;
+    transform:scale(1.08);
+}
+.testimonial-one__carousel .owl-nav button span{
+    display:block;
+    line-height:38px;
+}
+.testimonial-one__carousel .owl-dots{
+    position:relative;
+    z-index:2;
+}
 p.block-title__tag-line-test{
 	color: #17354f !important;
 margin: 0;
@@ -60,7 +96,7 @@ line-height: 1em;}
     font-size: 16px !important;
     font-weight: 600 !important;
     line-height: 30px !important;
-color: #000 !important !important;}
+color: #000 !important;}
 .testimonial-one{background: none !important; padding: 100px 0px 0px !important;}
 .testimonial-one:before{background-color:#F3F3F3 !important; opacity:1 !important;}
 .testimonial-one__image{display:none !important;}
@@ -76,11 +112,11 @@ div.swiper-slide>row>col-lg-7{
   max-width: 100% !important; 
 }
 div.swiper-slide>row>col-lg-5{display:none !important;} 
-//.team-one .team-carousel-btn{display:none;}
+/* .team-one .team-carousel-btn{display:none;} */
 section.blog-one {
     background-color: #eafbff !important;
 }
-.service-one__text-block {background-color: #eafbff !important !important;}
+.service-one__text-block {background-color: #eafbff !important;}
 input.wpcf7-submit{background-color: #b0812c; color:ffffff;}
 input.wpcf7-submit:hover{background-color: #916517; color:ffffff;}
 .contact-block-one__info-item {
@@ -132,6 +168,73 @@ small.logo-hd{color: #b0812c !important;}
 .site-header.header-one{background-color: #17354f !important;}
 
 .inner-banner{display:none;}
+
+/* Keep the primary About Us content flow visible and suppress the duplicate
+    responsive block from the exported page. */
+.page-id-75 .inner-banner{display:none;}
+.page-id-75 .elementor-75 .elementor-element-9032bbb{
+    background:#4d4d4d !important;
+}
+.page-id-75 .elementor-75 .elementor-element-9032bbb::before{
+    background:#4d4d4d !important;
+    opacity:1 !important;
+}
+.page-id-75 .elementor-75 .elementor-element-9032bbb .elementor-background-slideshow{
+    display:none !important;
+}
+.page-id-75 .inner-banner__title{
+    color:#b0812c;
+    font-family:"Titillium Web", sans-serif;
+    font-size:68px;
+    font-weight:800;
+    line-height:1.1;
+    margin:0 0 10px;
+}
+.page-id-75 .thm-breadcrumb,
+.page-id-75 .thm-breadcrumb a{
+    color:#fff;
+}
+.page-id-75 .elementor-element-b613028{
+    display:none !important;
+}
+.page-id-75 .elementor-75 > .elementor-element-6c35c4a{
+    background:#fff;
+}
+.page-id-75 .elementor-75 > .elementor-element-6c35c4a .e-con-inner{
+    max-width:1015px;
+}
+.page-id-75 .elementor-75 > .elementor-element-6c35c4a img{
+    display:block;
+    width:100%;
+    height:auto;
+}
+.page-id-75 .elementor-75 > .elementor-element-6c35c4a .elementor-widget-text-editor{
+    color:#111;
+}
+.page-id-75 .elementor-75 > .elementor-element-6c35c4a .elementor-widget-heading h1{
+    color:#17354f;
+    font-family:"Titillium Web", sans-serif;
+    font-size:32px;
+    font-weight:600;
+    line-height:1.2;
+    text-align:center;
+}
+
+@media (max-width: 767px){
+    .page-id-75 .inner-banner{
+        min-height:150px;
+        padding:42px 20px 34px;
+    }
+    .page-id-75 .inner-banner__title{
+        font-size:44px;
+    }
+    .page-id-75 .elementor-75 > .elementor-element-6c35c4a .elementor-widget-heading h1{
+        font-size:26px;
+    }
+    .testimonial-one__carousel .owl-nav{
+        inset-inline:8px;
+    }
+}
 
 section.team-one{padding-bottom:30px !important;}
 .service-one{padding-bottom: 30px !important; background-color: #eafbff !important;}

@@ -1,0 +1,341 @@
+.lhp-banner-wrapper {
+  position: relative;
+  width: 100%;
+  height: calc(100vh - 155px);
+  min-height: 600px;
+  overflow: hidden;
+  user-select: none;
+}
+
+.lhp-banner-slides-track {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.lhp-banner-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  will-change: transform;
+}
+
+/* Subtle overlay so text has great contrast */
+.lhp-banner-slide::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.12);
+  pointer-events: none;
+}
+
+.lhp-slide-active {
+  transform: translateY(0%);
+  z-index: 2;
+  display: block;
+}
+
+.lhp-slide-hidden {
+  transform: translateY(-100%);
+  z-index: 1;
+  display: none;
+}
+
+/* Slide Up-to-Down (Moving downwards) */
+.lhp-slide-entering-down {
+  display: block;
+  z-index: 4;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.45);
+  animation: lhpSlideEnterDown 0.85s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+}
+
+.lhp-slide-exiting-down {
+  display: block;
+  z-index: 3;
+  animation: lhpSlideExitDown 0.85s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+}
+
+@keyframes lhpSlideEnterDown {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes lhpSlideExitDown {
+  0% {
+    transform: translateY(0%);
+  }
+
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+/* Slide Down-to-Up (Moving upwards, for Prev button) */
+.lhp-slide-entering-up {
+  display: block;
+  z-index: 4;
+  box-shadow: 0 -15px 35px rgba(0, 0, 0, 0.45);
+  animation: lhpSlideEnterUp 0.85s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+}
+
+.lhp-slide-exiting-up {
+  display: block;
+  z-index: 3;
+  animation: lhpSlideExitUp 0.85s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+}
+
+@keyframes lhpSlideEnterUp {
+  0% {
+    transform: translateY(100%);
+  }
+
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes lhpSlideExitUp {
+  0% {
+    transform: translateY(0%);
+  }
+
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+/* Center Content Overlay */
+.lhp-banner-overlay-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.lhp-banner-overlay-content .container {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 15px;
+}
+
+.lhp-banner-wrapper .banner-title {
+  color: #b0812c !important;
+  font-size: 100px;
+  line-height: 95px;
+  font-weight: 900;
+  font-family: "Titillium Web", "Josefin Sans", sans-serif;
+  text-shadow: 3px 2px 4px rgba(0, 0, 0, 0.4);
+  margin: 0;
+  letter-spacing: -0.5px;
+}
+
+.lhp-banner-wrapper .btn-block {
+  margin-top: 35px;
+}
+
+.lhp-banner-wrapper .banner-btn {
+  display: inline-block;
+  vertical-align: middle;
+  color: #ffffff !important;
+  font-size: 18px;
+  font-weight: 600;
+  background-color: #b0812c;
+  padding: 18px 52px;
+  transition: all 0.35s ease;
+  border-radius: 4px;
+  text-decoration: none;
+  pointer-events: auto;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.lhp-banner-wrapper .banner-btn:hover {
+  background-color: #17354f;
+  color: #ffffff !important;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Navigation Dots */
+.lhp-banner-dots-container {
+  position: absolute;
+  bottom: 65px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 1200px;
+  padding-left: 20px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  z-index: 25;
+  pointer-events: auto;
+}
+
+.lhp-banner-dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.85);
+  background: transparent;
+  cursor: pointer;
+  padding: 0;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.lhp-banner-dot:hover {
+  border-color: #b0812c;
+  transform: scale(1.2);
+}
+
+.lhp-banner-dot.active {
+  border-color: #b0812c;
+  background-color: #b0812c;
+  box-shadow: 0 0 0 3px rgba(176, 129, 44, 0.5);
+  transform: scale(1.15);
+}
+
+/* Navigation Arrows */
+.lhp-banner-arrows-container {
+  position: absolute;
+  bottom: 55px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 1200px;
+  padding-right: 20px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 12px;
+  z-index: 25;
+  pointer-events: auto;
+}
+
+.lhp-banner-arrow {
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.35);
+  background: rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 22px;
+  transition: all 0.3s ease;
+  outline: none;
+  padding: 0;
+}
+
+.lhp-banner-arrow:hover {
+  border-color: #ffffff;
+  background: rgba(255, 255, 255, 0.25);
+  color: #ffffff;
+  transform: scale(1.05);
+}
+
+.lhp-banner-arrow:active {
+  transform: scale(0.95);
+}
+
+/* Responsive adjustments */
+@media (max-width: 1199px) {
+  .lhp-banner-wrapper {
+    height: 560px;
+  }
+
+  .lhp-banner-wrapper .banner-title {
+    font-size: 76px;
+    line-height: 80px;
+  }
+}
+
+@media (max-width: 991px) {
+  .lhp-banner-wrapper {
+    height: 500px;
+  }
+
+  .lhp-banner-wrapper .banner-title {
+    font-size: 58px;
+    line-height: 62px;
+  }
+
+  .lhp-banner-wrapper .banner-btn {
+    padding: 15px 40px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 767px) {
+  .lhp-banner-wrapper {
+    height: 440px;
+  }
+
+  .lhp-banner-wrapper .banner-title {
+    font-size: 38px;
+    line-height: 42px;
+  }
+
+  .lhp-banner-wrapper .btn-block {
+    margin-top: 22px;
+  }
+
+  .lhp-banner-wrapper .banner-btn {
+    padding: 12px 32px;
+    font-size: 15px;
+  }
+
+  .lhp-banner-dots-container {
+    bottom: 25px;
+  }
+
+  .lhp-banner-arrows-container {
+    bottom: 20px;
+  }
+
+  .lhp-banner-arrow {
+    width: 44px;
+    height: 44px;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .lhp-banner-wrapper {
+    height: 380px;
+  }
+
+  .lhp-banner-wrapper .banner-title {
+    font-size: 28px;
+    line-height: 32px;
+  }
+
+  .lhp-banner-arrows-container {
+    display: none;
+  }
+}

@@ -32,6 +32,45 @@ function loadScript(src) {
   });
 }
 
+function initializeLegacyCarousels() {
+  const $ = window.jQuery;
+  if (!$ || !$.fn.owlCarousel) return;
+
+  $('.testimonial-one__carousel').each(function () {
+    const $carousel = $(this);
+    if ($carousel.hasClass('owl-loaded')) return;
+
+    $carousel.owlCarousel({
+      loop: true,
+      margin: 0,
+      nav: true,
+      navText: [
+        '<span aria-label="Previous slide">&#10094;</span>',
+        '<span aria-label="Next slide">&#10095;</span>',
+      ],
+      dots: true,
+      slideBy: 1,
+      items: 1,
+      autoplay: true,
+      autoplayTimeout: 5000,
+      autoplayHoverPause: true,
+      smartSpeed: 900,
+      mouseDrag: true,
+      touchDrag: true,
+    });
+  });
+}
+
+function loadVendorScripts() {
+  if (!window.__lhpVendorScriptsPromise) {
+    window.__lhpVendorScriptsPromise = (async () => {
+      for (const src of vendorScripts) await loadScript(src);
+    })();
+  }
+
+  return window.__lhpVendorScriptsPromise;
+}
+
 export default function LegacyPage({ html, title, bodyClass, isContact = false }) {
   useEffect(() => {
     document.title = title;
@@ -40,13 +79,9 @@ export default function LegacyPage({ html, title, bodyClass, isContact = false }
 
     let cancelled = false;
     (async () => {
-      if (!window.__lhpVendorScriptsLoaded) {
-        window.__lhpVendorScriptsLoaded = true;
-        for (const src of vendorScripts) {
-          if (cancelled) return;
-          await loadScript(src);
-        }
-      }
+      await loadVendorScripts();
+      if (cancelled) return;
+      if (!cancelled) initializeLegacyCarousels();
       if (isContact && !cancelled) await loadScript('/js/contact-form.js');
     })();
 
