@@ -171,7 +171,7 @@
 }
 
 .lhp-banner-wrapper .banner-btn:hover {
-  background-color: #17354f;
+  background-color: #d32f2f;
   color: #ffffff !important;
   transform: translateY(-2px);
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
@@ -297,8 +297,8 @@
   }
 
   .lhp-banner-wrapper .banner-title {
-    font-size: 38px;
-    line-height: 42px;
+    font-size: 82px;
+    line-height: 86px;
   }
 
   .lhp-banner-wrapper .btn-block {
@@ -331,8 +331,8 @@
   }
 
   .lhp-banner-wrapper .banner-title {
-    font-size: 28px;
-    line-height: 32px;
+    font-size: 46px;
+    line-height: 50px;
   }
 
   .lhp-banner-arrows-container {

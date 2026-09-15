@@ -1,18 +1,20 @@
-import AboutUsPage from './pages/AboutUsPage.jsx';
-import AnnualReportsPage from './pages/AnnualReportsPage.jsx';
-import AuditCommitteePage from './pages/AuditCommitteePage.jsx';
-import CompanySecretarialPage from './pages/CompanySecretarialPage.jsx';
-import ContactUsPage from './pages/ContactUsPage.jsx';
-import GeneralPage from './pages/GeneralPage.jsx';
-import HomePage from './pages/HomePage.jsx';
-import InterimAccountsPage from './pages/InterimAccountsPage.jsx';
-import LakeHouseAtlasDivisionPage from './pages/LakeHouseAtlasDivisionPage.jsx';
-import LakeHouseTechnologiesDivisionPage from './pages/LakeHouseTechnologiesDivisionPage.jsx';
-import NominationAndGovernanceCommitteePage from './pages/NominationAndGovernanceCommitteePage.jsx';
-import PoliciesOnCorporateGovernancePage from './pages/PoliciesOnCorporateGovernancePage.jsx';
-import RelatedPartyTransactionsCommitteePage from './pages/RelatedPartyTransactionsCommitteePage.jsx';
-import RemunerationCommitteePage from './pages/RemunerationCommitteePage.jsx';
-import SecurityPrintingDivisionPage from './pages/SecurityPrintingDivisionPage.jsx';
+import { lazy, Suspense } from 'react';
+
+const AboutUsPage = lazy(() => import('./pages/AboutUsPage.jsx'));
+const AnnualReportsPage = lazy(() => import('./pages/AnnualReportsPage.jsx'));
+const AuditCommitteePage = lazy(() => import('./pages/AuditCommitteePage.jsx'));
+const CompanySecretarialPage = lazy(() => import('./pages/CompanySecretarialPage.jsx'));
+const ContactUsPage = lazy(() => import('./pages/ContactUsPage.jsx'));
+const GeneralPage = lazy(() => import('./pages/GeneralPage.jsx'));
+const HomePage = lazy(() => import('./pages/HomePage.jsx'));
+const InterimAccountsPage = lazy(() => import('./pages/InterimAccountsPage.jsx'));
+const LakeHouseAtlasDivisionPage = lazy(() => import('./pages/LakeHouseAtlasDivisionPage.jsx'));
+const LakeHouseTechnologiesDivisionPage = lazy(() => import('./pages/LakeHouseTechnologiesDivisionPage.jsx'));
+const NominationAndGovernanceCommitteePage = lazy(() => import('./pages/NominationAndGovernanceCommitteePage.jsx'));
+const PoliciesOnCorporateGovernancePage = lazy(() => import('./pages/PoliciesOnCorporateGovernancePage.jsx'));
+const RelatedPartyTransactionsCommitteePage = lazy(() => import('./pages/RelatedPartyTransactionsCommitteePage.jsx'));
+const RemunerationCommitteePage = lazy(() => import('./pages/RemunerationCommitteePage.jsx'));
+const SecurityPrintingDivisionPage = lazy(() => import('./pages/SecurityPrintingDivisionPage.jsx'));
 
 const routes = {
   "/about-us": AboutUsPage,
@@ -65,5 +67,9 @@ function NotFound() {
 export default function App() {
   const path = normalizePath(window.location.pathname);
   const Page = routes[path] || NotFound;
-  return <Page />;
+  return (
+    <Suspense fallback={<main aria-busy="true" />}>
+      <Page />
+    </Suspense>
+  );
 }

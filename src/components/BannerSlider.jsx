@@ -12,6 +12,16 @@ const slides = [
     image: '/wp-content/uploads/2024/10/slider-1-7-copy.jpg',
     alt: 'Lake House Security Cards',
   },
+    {
+    id: 2,
+    image: '/wp-content/uploads/2025/03/3.jpg',
+    alt: 'Lake House Security Cards',
+  },
+      {
+    id: 2,
+    image: '/wp-content/uploads/2025/01/sp-2.png',
+    alt: 'Lake House Security Cards',
+  },
 ];
 
 const SLIDE_INTERVAL_MS = 3000;
