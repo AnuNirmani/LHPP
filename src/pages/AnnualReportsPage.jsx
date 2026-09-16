@@ -1,4 +1,4 @@
-import LegacyPage from '../components/LegacyPage';
+import CategoryDownloadsPage from '../components/CategoryDownloadsPage';
 const html = String.raw`
 <div class="page-wrapper">
 <header class="site-header header-one header-style-two">
@@ -73,105 +73,7 @@ const html = String.raw`
 .elementor-heading-title{padding:0;margin:0;line-height:1}.elementor-widget-heading .elementor-heading-title[class*=elementor-size-]>a{color:inherit;font-size:inherit;line-height:inherit}.elementor-widget-heading .elementor-heading-title.elementor-size-small{font-size:15px}.elementor-widget-heading .elementor-heading-title.elementor-size-medium{font-size:19px}.elementor-widget-heading .elementor-heading-title.elementor-size-large{font-size:29px}.elementor-widget-heading .elementor-heading-title.elementor-size-xl{font-size:39px}.elementor-widget-heading .elementor-heading-title.elementor-size-xxl{font-size:59px}</style><h1 class="elementor-heading-title elementor-size-default">Annual Reports</h1> </div>
 </div>
 </div>
-<div class="elementor-element elementor-element-e395f55 e-flex e-con-boxed e-con e-parent" data-core-v316-plus="true" data-element_type="container" data-id="e395f55">
-<div class="e-con-inner">
-<div class="elementor-element elementor-element-c3c3ceb elementor-widget elementor-widget-dexen_download" data-element_type="widget" data-id="c3c3ceb" data-widget_type="dexen_download.default">
-<div class="elementor-widget-container">
-<section class="sec-pad sec-pad-content-margin-50 pt-0">
-<div class="container">
-<div class="row">
-<div class="col-lg-6">
-<div class="video-one hvr-float-shadow content-margin-50">
-<img alt="" decoding="async" src="/wp-content/uploads/2025/03/ar-3.jpg"/>
-</div><!-- /.video-one -->
-</div><!-- /.col-lg-6 -->
-<div class="col-lg-6">
-<div class="download-one content-margin-50">
-<h3 class="download-one__title">ANNUAL REPORT 2023/24 LAKE HOUSE PRINTERS AND PUBLISHERS PLC<!-- /.download-one__title --></h3>
-<p class="download-one__text"></p><!-- /.download-one__text -->
-<div class="download-one__option">
-<ul class="download-one__feature">
-<li class="download-one__feature-item"><span>Click to download --&gt;</span> </li>
-</ul><!-- /.download-one__feature -->
-<div class="download-one__links">
-<div class="download-one__links-row"> <a class="elementor-repeater-item-72eef36 download-one__link" href="/wp-content/uploads/2025/03/2023-2024.pdf">Download <i class="fa fa-angle-down"></i></a>
-</div><!-- /.download-one__links -->
-</div><!-- /.download-one__option -->
-</div><!-- /.download-one -->
-</div><!-- /.col-lg-6 -->
-</div><!-- /.row -->
-</div><!-- /.container -->
-</div></section>
-</div>
-</div>
-</div>
-</div>
-<div class="elementor-element elementor-element-d1f4440 e-flex e-con-boxed e-con e-parent" data-core-v316-plus="true" data-element_type="container" data-id="d1f4440">
-<div class="e-con-inner">
-<div class="elementor-element elementor-element-70dbeab elementor-widget elementor-widget-dexen_download" data-element_type="widget" data-id="70dbeab" data-widget_type="dexen_download.default">
-<div class="elementor-widget-container">
-<section class="sec-pad sec-pad-content-margin-50 pt-0">
-<div class="container">
-<div class="row">
-<div class="col-lg-6">
-<div class="video-one hvr-float-shadow content-margin-50">
-<img alt="" decoding="async" src="/wp-content/uploads/2024/12/1212121212-1.jpg"/>
-</div><!-- /.video-one -->
-</div><!-- /.col-lg-6 -->
-<div class="col-lg-6">
-<div class="download-one content-margin-50">
-<h3 class="download-one__title">ANNUAL REPORT 2022/23 LAKE HOUSE PRINTERS AND PUBLISHERS PLC<!-- /.download-one__title --></h3>
-<p class="download-one__text"></p><!-- /.download-one__text -->
-<div class="download-one__option">
-<ul class="download-one__feature">
-<li class="download-one__feature-item"><span>Click to download --&gt;</span> </li>
-</ul><!-- /.download-one__feature -->
-<div class="download-one__links">
-<div class="download-one__links-row"> <a class="elementor-repeater-item-72eef36 download-one__link" href="/wp-content/uploads/2025/03/2022-2023.pdf">Download <i class="fa fa-angle-down"></i></a>
-</div><!-- /.download-one__links -->
-</div><!-- /.download-one__option -->
-</div><!-- /.download-one -->
-</div><!-- /.col-lg-6 -->
-</div><!-- /.row -->
-</div><!-- /.container -->
-</div></section>
-</div>
-</div>
-</div>
-</div>
-<div class="elementor-element elementor-element-445a1ad e-flex e-con-boxed e-con e-parent" data-core-v316-plus="true" data-element_type="container" data-id="445a1ad">
-<div class="e-con-inner">
-<div class="elementor-element elementor-element-2af7458 elementor-widget elementor-widget-dexen_download" data-element_type="widget" data-id="2af7458" data-widget_type="dexen_download.default">
-<div class="elementor-widget-container">
-<section class="sec-pad sec-pad-content-margin-50 pt-0">
-<div class="container">
-<div class="row">
-<div class="col-lg-6">
-<div class="video-one hvr-float-shadow content-margin-50">
-<img alt="" decoding="async" src="/wp-content/uploads/2025/03/ar-1.jpg"/>
-</div><!-- /.video-one -->
-</div><!-- /.col-lg-6 -->
-<div class="col-lg-6">
-<div class="download-one content-margin-50">
-<h3 class="download-one__title">ANNUAL REPORT 2021/ 22 LAKE HOUSE PRINTERS AND PUBLISHERS PLC<!-- /.download-one__title --></h3>
-<p class="download-one__text"></p><!-- /.download-one__text -->
-<div class="download-one__option">
-<ul class="download-one__feature">
-<li class="download-one__feature-item"><span>Click to download --&gt;</span> </li>
-</ul><!-- /.download-one__feature -->
-<div class="download-one__links">
-<div class="download-one__links-row"> <a class="elementor-repeater-item-72eef36 download-one__link" href="http://lhpp.lk/wp-content/uploads/2025/03/2021-2022.pdf">Download <i class="fa fa-angle-down"></i></a>
-</div><!-- /.download-one__links -->
-</div><!-- /.download-one__option -->
-</div><!-- /.download-one -->
-</div><!-- /.col-lg-6 -->
-</div><!-- /.row -->
-</div><!-- /.container -->
-</div></section>
-</div>
-</div>
-</div>
-</div>
+<div id="doc-list-mount"></div>
 </div>
 <footer class="site-footer">
 <div class="elementor elementor-460" data-elementor-id="460" data-elementor-type="section">
@@ -237,5 +139,12 @@ const html = String.raw`
 
 
 export default function AnnualReportsPage() {
-  return <LegacyPage html={html} title="Annual Reports \u2013 Lake House Printers & Publishers" bodyClass="page-id-1672" isContact={false} />;
+  return (
+    <CategoryDownloadsPage
+      html={html}
+      title="Annual Reports \u2013 Lake House Printers & Publishers"
+      bodyClass="page-id-1672"
+      categoryTypeId={2}
+    />
+  );
 }

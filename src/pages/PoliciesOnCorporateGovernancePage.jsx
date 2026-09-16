@@ -1,4 +1,4 @@
-import LegacyPage from '../components/LegacyPage';
+import CategoryDownloadsPage from '../components/CategoryDownloadsPage';
 const html = String.raw`
 <div class="page-wrapper">
 <header class="site-header header-one header-style-two">
@@ -162,5 +162,13 @@ const html = String.raw`
 
 
 export default function PoliciesOnCorporateGovernancePage() {
-  return <LegacyPage html={html} title="Policies on Corporate Governance \u2013 Lake House Printers & Publishers" bodyClass="page-id-2205" isContact={false} />;
+  return (
+    <CategoryDownloadsPage
+      html={html}
+      title="Policies on Corporate Governance \u2013 Lake House Printers & Publishers"
+      bodyClass="page-id-2205"
+      categoryTypeId={8}
+      variant="simple"
+    />
+  );
 }

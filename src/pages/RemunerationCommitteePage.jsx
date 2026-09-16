@@ -1,4 +1,4 @@
-import LegacyPage from '../components/LegacyPage';
+import CategoryDownloadsPage from '../components/CategoryDownloadsPage';
 const html = String.raw`
 <div class="page-wrapper">
 <header class="site-header header-one header-style-two">
@@ -83,35 +83,7 @@ const html = String.raw`
 </div>
 </div>
 </div>
-<div class="elementor-element elementor-element-3c4253a elementor-widget elementor-widget-dexen_download" data-element_type="widget" data-id="3c4253a" data-widget_type="dexen_download.default">
-<div class="elementor-widget-container">
-<section class="sec-pad sec-pad-content-margin-50 pt-0">
-<div class="container">
-<div class="row">
-<div class="col-lg-6">
-<div class="video-one hvr-float-shadow content-margin-50">
-<img alt="Remuneration Committee - Notice 1" decoding="async" src="/wp-content/uploads/2025/03/rc.jpg"/>
-</div><!-- /.video-one -->
-</div><!-- /.col-lg-6 -->
-<div class="col-lg-6">
-<div class="download-one content-margin-50">
-<h3 class="download-one__title">Remuneration Committee - Notice 1<!-- /.download-one__title --></h3>
-<p class="download-one__text"></p><!-- /.download-one__text -->
-<div class="download-one__option">
-<ul class="download-one__feature">
-<li class="download-one__feature-item"><span>Click to download --&gt;</span> </li>
-</ul><!-- /.download-one__feature -->
-<div class="download-one__links">
-<div class="download-one__links-row"> <a class="elementor-repeater-item-72eef36 download-one__link" href="/wp-content/uploads/2025/03/Remuneration-Committee-Notice-1.docx">Download <i class="fa fa-angle-down"></i></a>
-</div><!-- /.download-one__links -->
-</div><!-- /.download-one__option -->
-</div><!-- /.download-one -->
-</div><!-- /.col-lg-6 -->
-</div><!-- /.row -->
-</div><!-- /.container -->
-</div></section>
-</div>
-</div>
+<div id="doc-list-mount"></div>
 <div class="elementor-element elementor-element-d27b3c2 elementor-widget elementor-widget-spacer" data-element_type="widget" data-id="d27b3c2" data-widget_type="spacer.default">
 <div class="elementor-widget-container">
 <div class="elementor-spacer">
@@ -186,5 +158,12 @@ const html = String.raw`
 
 
 export default function RemunerationCommitteePage() {
-  return <LegacyPage html={html} title="Remuneration Committee \u2013 Lake House Printers & Publishers" bodyClass="page-id-1696" isContact={false} />;
+  return (
+    <CategoryDownloadsPage
+      html={html}
+      title="Remuneration Committee \u2013 Lake House Printers & Publishers"
+      bodyClass="page-id-1696"
+      categoryTypeId={5}
+    />
+  );
 }

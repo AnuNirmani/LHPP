@@ -1,4 +1,4 @@
-import LegacyPage from '../components/LegacyPage';
+import CategoryDownloadsPage from '../components/CategoryDownloadsPage';
 const html = String.raw`
 <div class="page-wrapper">
 <header class="site-header header-one header-style-two">
@@ -73,200 +73,7 @@ const html = String.raw`
 .elementor-heading-title{padding:0;margin:0;line-height:1}.elementor-widget-heading .elementor-heading-title[class*=elementor-size-]>a{color:inherit;font-size:inherit;line-height:inherit}.elementor-widget-heading .elementor-heading-title.elementor-size-small{font-size:15px}.elementor-widget-heading .elementor-heading-title.elementor-size-medium{font-size:19px}.elementor-widget-heading .elementor-heading-title.elementor-size-large{font-size:29px}.elementor-widget-heading .elementor-heading-title.elementor-size-xl{font-size:39px}.elementor-widget-heading .elementor-heading-title.elementor-size-xxl{font-size:59px}</style><h1 class="elementor-heading-title elementor-size-default">Interim Accounts </h1> </div>
 </div>
 </div>
-<div class="elementor-element elementor-element-a882898 e-flex e-con-boxed e-con e-parent" data-core-v316-plus="true" data-element_type="container" data-id="a882898">
-<div class="e-con-inner">
-<div class="elementor-element elementor-element-a77cc1d elementor-widget elementor-widget-dexen_download" data-element_type="widget" data-id="a77cc1d" data-widget_type="dexen_download.default">
-<div class="elementor-widget-container">
-<section class="sec-pad sec-pad-content-margin-50 pt-0">
-<div class="container">
-<div class="row">
-<div class="col-lg-6">
-<div class="video-one hvr-float-shadow content-margin-50">
-<img alt="Interim Accounts For The 09 Months Ended 31st December 2024" decoding="async" src="/wp-content/uploads/2025/03/sd-4.jpg"/>
-</div><!-- /.video-one -->
-</div><!-- /.col-lg-6 -->
-<div class="col-lg-6">
-<div class="download-one content-margin-50">
-<h3 class="download-one__title">Interim Accounts For The 09 Months Ended 31st December 2024 <!-- /.download-one__title --></h3>
-<p class="download-one__text"></p><!-- /.download-one__text -->
-<div class="download-one__option">
-<ul class="download-one__feature">
-<li class="download-one__feature-item"><span>Click to download --&gt;</span> </li>
-</ul><!-- /.download-one__feature -->
-<div class="download-one__links">
-<div class="download-one__links-row"> <a class="elementor-repeater-item-72eef36 download-one__link" href="/wp-content/uploads/2025/03/INTERIM-ACCOUNTS-FOR-THE-09-MONTHS-ENDED-31ST-DECEMBER-2024.pdf">Download <i class="fa fa-angle-down"></i></a>
-</div><!-- /.download-one__links -->
-</div><!-- /.download-one__option -->
-</div><!-- /.download-one -->
-</div><!-- /.col-lg-6 -->
-</div><!-- /.row -->
-</div><!-- /.container -->
-</div></section>
-</div>
-</div>
-</div>
-</div>
-<div class="elementor-element elementor-element-59e40ce e-flex e-con-boxed e-con e-parent" data-core-v316-plus="true" data-element_type="container" data-id="59e40ce">
-<div class="e-con-inner">
-<div class="elementor-element elementor-element-43cd0f3 elementor-widget elementor-widget-dexen_download" data-element_type="widget" data-id="43cd0f3" data-widget_type="dexen_download.default">
-<div class="elementor-widget-container">
-<section class="sec-pad sec-pad-content-margin-50 pt-0">
-<div class="container">
-<div class="row">
-<div class="col-lg-6">
-<div class="video-one hvr-float-shadow content-margin-50">
-<img alt="" decoding="async" src="/wp-content/uploads/2025/03/sd-3.jpg"/>
-</div><!-- /.video-one -->
-</div><!-- /.col-lg-6 -->
-<div class="col-lg-6">
-<div class="download-one content-margin-50">
-<h3 class="download-one__title">Interim Accounts For The 06 Months Ended 30th September 2024 <!-- /.download-one__title --></h3>
-<p class="download-one__text"></p><!-- /.download-one__text -->
-<div class="download-one__option">
-<ul class="download-one__feature">
-<li class="download-one__feature-item"><span>Click to download --&gt;</span> </li>
-</ul><!-- /.download-one__feature -->
-<div class="download-one__links">
-<div class="download-one__links-row"> <a class="elementor-repeater-item-72eef36 download-one__link" href="/wp-content/uploads/2025/03/INTERIM-ACCOUNTS-FOR-THE-6-MONTHS-ENDED-30TH-SEPTEMBER-2024.pdf">Download <i class="fa fa-angle-down"></i></a>
-</div><!-- /.download-one__links -->
-</div><!-- /.download-one__option -->
-</div><!-- /.download-one -->
-</div><!-- /.col-lg-6 -->
-</div><!-- /.row -->
-</div><!-- /.container -->
-</div></section>
-</div>
-</div>
-</div>
-</div>
-<div class="elementor-element elementor-element-5375cd6 e-flex e-con-boxed e-con e-parent" data-core-v316-plus="true" data-element_type="container" data-id="5375cd6">
-<div class="e-con-inner">
-<div class="elementor-element elementor-element-c25c5e0 elementor-widget elementor-widget-dexen_download" data-element_type="widget" data-id="c25c5e0" data-widget_type="dexen_download.default">
-<div class="elementor-widget-container">
-<section class="sec-pad sec-pad-content-margin-50 pt-0">
-<div class="container">
-<div class="row">
-<div class="col-lg-6">
-<div class="video-one hvr-float-shadow content-margin-50">
-<img alt="Interim Accounts For The 03 Months Ended 30th June 2024" decoding="async" src="/wp-content/uploads/2025/03/sd-2.jpg"/>
-</div><!-- /.video-one -->
-</div><!-- /.col-lg-6 -->
-<div class="col-lg-6">
-<div class="download-one content-margin-50">
-<h3 class="download-one__title">Interim Accounts For The 03 Months Ended 30th June 2024 <!-- /.download-one__title --></h3>
-<p class="download-one__text"></p><!-- /.download-one__text -->
-<div class="download-one__option">
-<ul class="download-one__feature">
-<li class="download-one__feature-item"><span>Click to download --&gt;</span> </li>
-</ul><!-- /.download-one__feature -->
-<div class="download-one__links">
-<div class="download-one__links-row"> <a class="elementor-repeater-item-72eef36 download-one__link" href="/wp-content/uploads/2025/03/INTERIM-ACCOUNTS-FOR-THE-03-MONTHS-ENDED-30TH-JUNE-2024.pdf">Download <i class="fa fa-angle-down"></i></a>
-</div><!-- /.download-one__links -->
-</div><!-- /.download-one__option -->
-</div><!-- /.download-one -->
-</div><!-- /.col-lg-6 -->
-</div><!-- /.row -->
-</div><!-- /.container -->
-</div></section>
-</div>
-</div>
-</div>
-</div>
-<div class="elementor-element elementor-element-55f4a04 e-flex e-con-boxed e-con e-parent" data-core-v316-plus="true" data-element_type="container" data-id="55f4a04">
-<div class="e-con-inner">
-<div class="elementor-element elementor-element-a3d9b3f elementor-widget elementor-widget-dexen_download" data-element_type="widget" data-id="a3d9b3f" data-widget_type="dexen_download.default">
-<div class="elementor-widget-container">
-<section class="sec-pad sec-pad-content-margin-50 pt-0">
-<div class="container">
-<div class="row">
-<div class="col-lg-6">
-<div class="video-one hvr-float-shadow content-margin-50">
-<img alt="Interim Accounts For The Year Ended 31st March 2024" decoding="async" src="/wp-content/uploads/2025/03/sd-1.jpg"/>
-</div><!-- /.video-one -->
-</div><!-- /.col-lg-6 -->
-<div class="col-lg-6">
-<div class="download-one content-margin-50">
-<h3 class="download-one__title">Interim Accounts For The Year Ended 31st March 2024 <!-- /.download-one__title --></h3>
-<p class="download-one__text"></p><!-- /.download-one__text -->
-<div class="download-one__option">
-<ul class="download-one__feature">
-<li class="download-one__feature-item"><span>Click to download --&gt;</span> </li>
-</ul><!-- /.download-one__feature -->
-<div class="download-one__links">
-<div class="download-one__links-row"> <a class="elementor-repeater-item-72eef36 download-one__link" href="/wp-content/uploads/2025/03/INTERIM-ACCOUNTS-FOR-THE-YEAR-ENDED-31ST-MARCH-2024.pdf">Download <i class="fa fa-angle-down"></i></a>
-</div><!-- /.download-one__links -->
-</div><!-- /.download-one__option -->
-</div><!-- /.download-one -->
-</div><!-- /.col-lg-6 -->
-</div><!-- /.row -->
-</div><!-- /.container -->
-</div></section>
-</div>
-</div>
-</div>
-</div>
-<div class="elementor-element elementor-element-7838867 e-flex e-con-boxed e-con e-parent" data-core-v316-plus="true" data-element_type="container" data-id="7838867">
-<div class="e-con-inner">
-<div class="elementor-element elementor-element-3fb18be elementor-widget elementor-widget-dexen_download" data-element_type="widget" data-id="3fb18be" data-widget_type="dexen_download.default">
-<div class="elementor-widget-container">
-<section class="sec-pad sec-pad-content-margin-50 pt-0">
-<div class="container">
-<div class="row">
-<div class="col-lg-6">
-<div class="video-one hvr-float-shadow content-margin-50">
-<img alt="" decoding="async" src="/wp-content/uploads/2024/12/hj.jpg"/>
-</div><!-- /.video-one -->
-</div><!-- /.col-lg-6 -->
-<div class="col-lg-6">
-<div class="download-one content-margin-50">
-<h3 class="download-one__title">Interim Accounts for the Quarter Ended 31st March 2024<!-- /.download-one__title --></h3>
-<p class="download-one__text"></p><!-- /.download-one__text -->
-<div class="download-one__option">
-<ul class="download-one__feature">
-<li class="download-one__feature-item"><span>Click to download --&gt;</span> </li>
-</ul><!-- /.download-one__feature -->
-<div class="download-one__links">
-<div class="download-one__links-row"> <a class="elementor-repeater-item-72eef36 download-one__link" href="/wp-content/uploads/2025/03/Interim-Accounts-for-the-Quarter-Ended-31st-March-2024.pdf">Download <i class="fa fa-angle-down"></i></a>
-</div><!-- /.download-one__links -->
-</div><!-- /.download-one__option -->
-</div><!-- /.download-one -->
-</div><!-- /.col-lg-6 -->
-</div><!-- /.row -->
-</div><!-- /.container -->
-</div></section>
-</div>
-</div>
-<div class="elementor-element elementor-element-512399e elementor-widget elementor-widget-dexen_download" data-element_type="widget" data-id="512399e" data-widget_type="dexen_download.default">
-<div class="elementor-widget-container">
-<section class="sec-pad sec-pad-content-margin-50 pt-0">
-<div class="container">
-<div class="row">
-<div class="col-lg-6">
-<div class="video-one hvr-float-shadow content-margin-50">
-<img alt="" decoding="async" src="/wp-content/uploads/2024/12/sd.jpg"/>
-</div><!-- /.video-one -->
-</div><!-- /.col-lg-6 -->
-<div class="col-lg-6">
-<div class="download-one content-margin-50">
-<h3 class="download-one__title">Interim Accounts for the 09 months ended 31st December 2023<!-- /.download-one__title --></h3>
-<p class="download-one__text"></p><!-- /.download-one__text -->
-<div class="download-one__option">
-<ul class="download-one__feature">
-<li class="download-one__feature-item"><span>Click to download --&gt;</span> </li>
-</ul><!-- /.download-one__feature -->
-<div class="download-one__links">
-<div class="download-one__links-row"> <a class="elementor-repeater-item-72eef36 download-one__link" href="/wp-content/uploads/2025/03/Interim-Accounts-for-the-09-months-ended-31st-December-2023.pdf">Download <i class="fa fa-angle-down"></i></a>
-</div><!-- /.download-one__links -->
-</div><!-- /.download-one__option -->
-</div><!-- /.download-one -->
-</div><!-- /.col-lg-6 -->
-</div><!-- /.row -->
-</div><!-- /.container -->
-</div></section>
-</div>
-</div>
-</div>
-</div>
+<div id="doc-list-mount"></div>
 </div>
 <footer class="site-footer">
 <div class="elementor elementor-460" data-elementor-id="460" data-elementor-type="section">
@@ -332,5 +139,12 @@ const html = String.raw`
 
 
 export default function InterimAccountsPage() {
-  return <LegacyPage html={html} title="Interim Accounts \u2013 Lake House Printers & Publishers" bodyClass="page-id-1666" isContact={false} />;
+  return (
+    <CategoryDownloadsPage
+      html={html}
+      title="Interim Accounts \u2013 Lake House Printers & Publishers"
+      bodyClass="page-id-1666"
+      categoryTypeId={1}
+    />
+  );
 }
