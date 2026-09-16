@@ -1,5 +1,513 @@
 import LegacyPage from '../components/LegacyPage';
-import html from '../content/about-us.html?raw';
+const html = String.raw`
+<div class="page-wrapper">
+<header class="site-header header-one header-style-two">
+<div class="top-bar">
+<div class="container">
+<div class="social-block social-font-wesome-problem">
+                                             </div><!-- /.social-block -->
+<div class="logo-block" style="text-align: center">
+<a class="custom-logo-link" href="/" rel="home"><img alt="Lake House Printers &amp; Publishers" class="custom-logo" decoding="async" height="75" src="/wp-content/uploads/2024/04/cropped-logo-1-1.png" width="102"/></a>
+<br/>
+<small class="logo-hd d-none d-lg-block" style="color: #000"> <strong>Lake House Printers and Publishers PLC</strong> </small>
+</div>
+<small class="logo-hd d-lg-none w-100" style="color: #000; text-align: center; margin-top: -20px;"> <strong>Lake House Printers and Publishers PLC</strong> </small> <div class="right-block">
+<a href="mailto:info@lakehppl.com"><i class="fa fa-envelope"></i>info@lakehppl.com</a><br/>
+<a href="https://wa.me/+94117683700"><i class="fa fa-whatsapp" style="color: ; font-size: 17px"></i>+94 117 683 700</a>
+</div><!-- /.right-block -->
+</div><!-- /.container -->
+</div><!-- /.top-bar -->
+<nav class="navbar navbar-expand-lg navbar-light header-navigation stricky">
+<div class="container clearfix">
+<!-- Brand and toggle get grouped for better mobile display -->
+<div class="logo-box clearfix">
+<button class="menu-toggler" data-target="#main-nav-bar" style="box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; background-color: #fff !important;  border-radius: 5px; padding: 4px 7px; border: 1px solid #eeeeee">
+<span class="fa fa-bars"></span>
+</button>
+</div><!-- /.logo-box -->
+<div class="main-navigation" id="main-nav-bar">
+<ul class="navigation-box" id="menu-primary-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-25" id="menu-item-25"><a href="/">Home</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1026" id="menu-item-1026"><a href="#">Divisions</a>
+<ul class="sub-menu">
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1029" id="menu-item-1029"><a href="/security-printing-division">Security Printing</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1028" id="menu-item-1028"><a href="/lake-house-technologies-division">Lake House Technologies</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1027" id="menu-item-1027"><a href="/lake-house-atlas-division">Lake House Atlas</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-75 current_page_item menu-item-140" id="menu-item-140"><a aria-current="page" href="/about-us">About Us</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-74" id="menu-item-74"><a href="/contact-us">Contact Us</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1740" id="menu-item-1740"><a href="/company-secretarial">Company Secretarial</a>
+<ul class="sub-menu">
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1716" id="menu-item-1716"><a href="/interim-accounts">Interim Accounts</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1714" id="menu-item-1714"><a href="/annual-reports">Annual Reports</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1715" id="menu-item-1715"><a href="/audit-committee">Audit Committee</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1718" id="menu-item-1718"><a href="/related-party-transactions-committee">Related Party Transactions Committee</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1719" id="menu-item-1719"><a href="/remuneration-committee">Remuneration Committee</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1717" id="menu-item-1717"><a href="/nomination-and-governance-committee">Nomination and Governance Committee</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1720" id="menu-item-1720"><a href="/general">General</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2212" id="menu-item-2212"><a href="/policies-on-corporate-governance">Policies on Corporate Governance</a></li>
+</ul>
+</li>
+</ul> </div><!-- /.navbar-collapse --> <!-- Collect the nav links, forms, and other content for toggling -->
+<div class="right-side-box">
+<div class="header__social-block">
+                                                     </div><!-- /.social-block -->
+</div><!-- /.right-side-box -->
+</div>
+<!-- /.container -->
+</nav>
+</header><!-- /.site-header header-one -->
+<div class="inner-banner thm-black-bg text-center dexen-breadcumb">
+<div class="container">
+<h2 class="inner-banner__title">About Us</h2>
+<div class="thm-breadcrumb">
+<!-- Breadcrumb NavXT 6.2.0 -->
+<span property="itemListElement" typeof="ListItem"><a class="home" href="/" property="item" title="Go to Lake House Printers &amp; Publishers." typeof="WebPage"><span property="name">Lake House Printers &amp; Publishers</span></a><meta content="1" property="position"/></span> &gt; About Us        </div><!-- /.breadcrumb -->
+</div><!-- /.container -->
+</div>
+<div class="elementor elementor-75" data-elementor-id="75" data-elementor-type="wp-page">
+<div class="elementor-element elementor-element-9032bbb e-con-full e-flex e-con e-parent" data-core-v316-plus="true" data-element_type="container" data-id="9032bbb" data-settings='{"background_background":"slideshow","background_slideshow_gallery":[{"id":1428,"url":"http:\/\/beta.lhpp.lk\/wp-content\/uploads\/2025\/02\/about.png"}],"background_slideshow_loop":"yes","background_slideshow_slide_duration":5000,"background_slideshow_slide_transition":"fade","background_slideshow_transition_duration":500}'>
+<div class="elementor-element elementor-element-c74cd61 animated-slow elementor-invisible elementor-widget elementor-widget-heading" data-element_type="widget" data-id="c74cd61" data-settings='{"_animation":"fadeIn","_animation_delay":700}' data-widget_type="heading.default">
+<div class="elementor-widget-container">
+<style>/*! elementor - v3.20.0 - 20-03-2024 */
+.elementor-heading-title{padding:0;margin:0;line-height:1}.elementor-widget-heading .elementor-heading-title[class*=elementor-size-]>a{color:inherit;font-size:inherit;line-height:inherit}.elementor-widget-heading .elementor-heading-title.elementor-size-small{font-size:15px}.elementor-widget-heading .elementor-heading-title.elementor-size-medium{font-size:19px}.elementor-widget-heading .elementor-heading-title.elementor-size-large{font-size:29px}.elementor-widget-heading .elementor-heading-title.elementor-size-xl{font-size:39px}.elementor-widget-heading .elementor-heading-title.elementor-size-xxl{font-size:59px}</style><h1 class="elementor-heading-title elementor-size-default">About Us</h1> </div>
+</div>
+</div>
+<section class="elementor-section elementor-top-section elementor-element elementor-element-6c35c4a elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-element_type="section" data-id="6c35c4a">
+<div class="elementor-container elementor-column-gap-default">
+<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-ce99f54" data-element_type="column" data-id="ce99f54">
+<div class="elementor-widget-wrap elementor-element-populated">
+<div class="elementor-element elementor-element-016f0fc e-flex e-con-boxed e-con e-parent" data-core-v316-plus="true" data-element_type="container" data-id="016f0fc">
+<div class="e-con-inner">
+<div class="elementor-element elementor-element-087c1aa e-flex e-con-boxed e-con e-child" data-element_type="container" data-id="087c1aa">
+<div class="e-con-inner">
+<div class="elementor-element elementor-element-284a5ee elementor-widget elementor-widget-image" data-element_type="widget" data-id="284a5ee" data-widget_type="image.default">
+<div class="elementor-widget-container">
+<style>/*! elementor - v3.20.0 - 20-03-2024 */
+.elementor-widget-image{text-align:center}.elementor-widget-image a{display:inline-block}.elementor-widget-image a img[src$=".svg"]{width:48px}.elementor-widget-image img{vertical-align:middle;display:inline-block}</style> <img alt="" class="attachment-full size-full wp-image-955" decoding="async" fetchpriority="high" height="478" src="/wp-content/uploads/2024/10/eeee.jpg" width="1288"/> </div>
+</div>
+</div>
+</div>
+<div class="elementor-element elementor-element-7880dd2 elementor-widget elementor-widget-text-editor" data-element_type="widget" data-id="7880dd2" data-widget_type="text-editor.default">
+<div class="elementor-widget-container">
+<style>/*! elementor - v3.20.0 - 20-03-2024 */
+.elementor-widget-text-editor.elementor-drop-cap-view-stacked .elementor-drop-cap{background-color:#69727d;color:#fff}.elementor-widget-text-editor.elementor-drop-cap-view-framed .elementor-drop-cap{color:#69727d;border:3px solid;background-color:transparent}.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap{margin-top:8px}.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap-letter{width:1em;height:1em}.elementor-widget-text-editor .elementor-drop-cap{float:left;text-align:center;line-height:1;font-size:50px}.elementor-widget-text-editor .elementor-drop-cap-letter{display:inline-block}</style> <p>Lake House Printers &amp; Publishers PLC is a Public Limited Liability Company quoted on the Colombo Stock Exchange. It was incorporated in 1965 as a Private Limited Liability Company until it went public in 1975 and remains so to this day.</p><p>The company has its origins as the Commercial Printing Department of the then largest newspaper group in Sri Lanka, the Associated Newspapers of Ceylon Limited (ANCL), which itself was incorporated in 1926.</p><p>Our company, located in Colombo 2 specializes in security printing, primarily the printing and supply of cheque leaves, as well as providing plastic and metal banking cards, digital solutions, sustainable cards and wearables to our customer base which mainly comprises state and commercial banks and established business houses in the country.</p><p>For operational purposes, it has two main production divisions, namely the Security Printing Division and Lake House Technologies Division. (Also known as the Security Cards Division)</p> </div>
+</div>
+<div class="elementor-element elementor-element-d24f866 elementor-widget elementor-widget-heading" data-element_type="widget" data-id="d24f866" data-widget_type="heading.default">
+<div class="elementor-widget-container">
+<h1 class="elementor-heading-title elementor-size-default">Lake House Technologies Division (Formerly the Security Cards Division)</h1> </div>
+</div>
+<div class="elementor-element elementor-element-a83ecf8 elementor-widget elementor-widget-text-editor" data-element_type="widget" data-id="a83ecf8" data-widget_type="text-editor.default">
+<div class="elementor-widget-container">
+<p>Lake House Technologies Division, established in 2007, has today swiftly risen to prominence in the banking sector. In recent years it has consolidated its position as a leading market force, serving as the go-to provider for a diverse array of banking cards and digital solutions to its customers</p><p>Our expertise goes beyond serving the banking, corporate, government, and hospitality sectors. We offer a range of personalized plastic and metal cards, digital solutions, sustainable cards, and wearables.</p> </div>
+</div>
+<div class="elementor-element elementor-element-e1f0ff1 elementor-widget elementor-widget-heading" data-element_type="widget" data-id="e1f0ff1" data-widget_type="heading.default">
+<div class="elementor-widget-container">
+<h1 class="elementor-heading-title elementor-size-default">Security Printing Division:</h1> </div>
+</div>
+<div class="elementor-element elementor-element-ea16bdb elementor-widget elementor-widget-text-editor" data-element_type="widget" data-id="ea16bdb" data-widget_type="text-editor.default">
+<div class="elementor-widget-container">
+<p>One little-known fact about the company’s Security Printing Division is that it pioneered the printing of cheque leaves in the country, an activity which the company is still pursuing successfully.</p><p>Over the years, till recently the Lake House Technologies Division started making inroads, the printing of cheque leaves and marketing of security documents were considered the raison d’être of the company, as its successes had been centered around this activity.   </p><p>The Security Printing Division still remains a prominent supplier of cheque leaves and continuous cheques to all the banks in the country.”</p> </div>
+</div>
+<div class="elementor-element elementor-element-2263b2a elementor-widget elementor-widget-heading" data-element_type="widget" data-id="2263b2a" data-widget_type="heading.default">
+<div class="elementor-widget-container">
+<h1 class="elementor-heading-title elementor-size-default">Lake House Atlas Trading Division:</h1> </div>
+</div>
+<div class="elementor-element elementor-element-6297c5f elementor-widget elementor-widget-text-editor" data-element_type="widget" data-id="6297c5f" data-widget_type="text-editor.default">
+<div class="elementor-widget-container">
+<p>The company has for several decades, been at the forefront of publishing and marketing its nationally acclaimed “Lake House Atlas” available in Sinhala, English, Tamil, and a junior version of the atlas in Sinhala. Authored by educational specialists and enriched with insights from university professors, educationists, and cartography experts, these atlases are renowned in the market. They provide invaluable guidance for students, who are the future generation</p> </div>
+</div>
+</div>
+</div>
+<div class="elementor-element elementor-element-b613028 e-flex e-con-boxed e-con e-parent" data-core-v316-plus="true" data-element_type="container" data-id="b613028">
+<div class="e-con-inner">
+<div class="elementor-element elementor-element-1b18b7e e-flex e-con-boxed e-con e-child" data-element_type="container" data-id="1b18b7e">
+<div class="e-con-inner">
+</div>
+</div>
+<div class="elementor-element elementor-element-1e7bb53 elementor-widget elementor-widget-text-editor" data-element_type="widget" data-id="1e7bb53" data-widget_type="text-editor.default">
+<div class="elementor-widget-container">
+<p>Lake House Printers &amp; Publishers PLC is a Public Limited Liability Company quoted on the Colombo Stock Exchange. It was incorporated in 1965 as a Private Limited Liability Company until it went public in 1975 and remains so to this day.</p><p>The company has its origins as the Commercial Printing Department of the then largest newspaper group in Sri Lanka, the Associated Newspapers of Ceylon Limited (ANCL), which itself was incorporated in 1926.</p><p>Our company, located in Colombo 2 specializes in security printing, primarily the printing and supply of cheque leaves, as well as providing plastic and metal banking cards, digital solutions, sustainable cards and wearables to our customer base which mainly comprises state and commercial banks and established business houses in the country.</p><p>For operational purposes, it has two main production divisions, namely the Security Printing Division and Lake House Technologies Division. (Also known as the Security Cards Division)</p> </div>
+</div>
+<div class="elementor-element elementor-element-c60c768 elementor-widget elementor-widget-heading" data-element_type="widget" data-id="c60c768" data-widget_type="heading.default">
+<div class="elementor-widget-container">
+<h1 class="elementor-heading-title elementor-size-default">Lake House Technologies Division (Formerly the Security Cards Division)</h1> </div>
+</div>
+<div class="elementor-element elementor-element-9edece8 elementor-widget elementor-widget-text-editor" data-element_type="widget" data-id="9edece8" data-widget_type="text-editor.default">
+<div class="elementor-widget-container">
+<p>Lake House Technologies Division, established in 2007, has today swiftly risen to prominence in the banking sector. In recent years it has consolidated its position as a leading market force, serving as the go-to provider for a diverse array of banking cards and digital solutions to its customers</p><p>Our expertise goes beyond serving the banking, corporate, government, and hospitality sectors. We offer a range of personalized plastic and metal cards, digital solutions, sustainable cards, and wearables.</p> </div>
+</div>
+<div class="elementor-element elementor-element-12172a9 elementor-widget elementor-widget-heading" data-element_type="widget" data-id="12172a9" data-widget_type="heading.default">
+<div class="elementor-widget-container">
+<h1 class="elementor-heading-title elementor-size-default">Security Printing Division:</h1> </div>
+</div>
+<div class="elementor-element elementor-element-f95f06e elementor-widget elementor-widget-text-editor" data-element_type="widget" data-id="f95f06e" data-widget_type="text-editor.default">
+<div class="elementor-widget-container">
+<p>One little-known fact about the company’s Security Printing Division is that it pioneered the printing of cheque leaves in the country, an activity which the company is still pursuing successfully.</p><p>Over the years, till recently the Lake House Technologies Division started making inroads, the printing of cheque leaves and marketing of security documents were considered the raison d’être of the company, as its successes had been centered around this activity.   </p><p>The Security Printing Division still remains a prominent supplier of cheque leaves and continuous cheques to all the banks in the country.”</p> </div>
+</div>
+<div class="elementor-element elementor-element-ca529a4 elementor-widget elementor-widget-heading" data-element_type="widget" data-id="ca529a4" data-widget_type="heading.default">
+<div class="elementor-widget-container">
+<h1 class="elementor-heading-title elementor-size-default">Lake House Atlas Trading Division:</h1> </div>
+</div>
+<div class="elementor-element elementor-element-2af1363 elementor-widget elementor-widget-text-editor" data-element_type="widget" data-id="2af1363" data-widget_type="text-editor.default">
+<div class="elementor-widget-container">
+<p>The company has for several decades, been at the forefront of publishing and marketing its nationally acclaimed “Lake House Atlas” available in Sinhala, English, Tamil, and a junior version of the atlas in Sinhala. Authored by educational specialists and enriched with insights from university professors, educationists, and cartography experts, these atlases are renowned in the market. They provide invaluable guidance for students, who are the future generation</p> </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<div class="elementor-element elementor-element-0809662 e-flex e-con-boxed e-con e-parent" data-core-v316-plus="true" data-element_type="container" data-id="0809662">
+<div class="e-con-inner">
+<div class="elementor-element elementor-element-23dfa9d elementor-widget elementor-widget-heading" data-element_type="widget" data-id="23dfa9d" data-widget_type="heading.default">
+<div class="elementor-widget-container">
+<h3 class="elementor-heading-title elementor-size-default">Our Leaders</h3> </div>
+</div>
+<div class="elementor-element elementor-element-3fd7b3d elementor-widget elementor-widget-heading" data-element_type="widget" data-id="3fd7b3d" data-widget_type="heading.default">
+<div class="elementor-widget-container">
+<h2 class="elementor-heading-title elementor-size-default">Board of Directors</h2> </div>
+</div>
+<div class="elementor-element elementor-element-31ff2ee elementor-widget elementor-widget-dexen_testimonials_carousel" data-element_type="widget" data-id="31ff2ee" data-widget_type="dexen_testimonials_carousel.default">
+<div class="elementor-widget-container">
+<section class="testimonial-one">
+<div class="container">
+<div class="testimonial-one__carousel owl-theme owl-carousel">
+<div class="item">
+<div class="testimonial-one__single">
+<div class="testimonial-one__image">
+<img alt="Image" decoding="async" src=""/>
+</div><!-- /.testimonial-one__image -->
+<p class="testimonial-one__text"><p class="block-title__tag-line-test">Founder Chairman/Managing Director</p>
+<h2 class="block-title__title-test">Mr. R.S. Wijewardene </h2>
+<p class="testimonial-one__text">
+
+Mr. R.S. Wijewardene, our Chairman and Managing Director, holds a Master’s Degree from the University of Cambridge, UK, and has led our company since its inception in 1965.He serves as the President of the Newspaper Society of Sri Lanka. He also chairs the wholly-owned subsidiary company L H Plantations (Private) Limited and related entities including Wijeya Newspapers Limited, Ranweli Holiday Village Limited, Freudenberg &amp; Company Limited, Sarathi Limited, R. S Printek (Private) Limited, and Wijeya Graphics (Private) Limited.
+
+</p>
+<p class="testimonial-one__text">
+Mr. R.S. Wijewardene is the son of Mr. D.R. Wijewardene, founder of the Associated Newspapers of Ceylon Limited who is recognized for the role played by him in the nation's journey towards independence. His enduring contributions to the independence movement have profoundly shaped Sri Lanka's history in a positive manner
+
+
+</p></p><!-- /.testimonial-one__text -->
+<h4 class="testimonial-one__name"></h4>
+</div><!-- /.testimonial-one__single -->
+</div><!-- /.item -->
+<div class="item">
+<div class="testimonial-one__single">
+<div class="testimonial-one__image">
+<img alt="Image" decoding="async" src=""/>
+</div><!-- /.testimonial-one__image -->
+<p class="testimonial-one__text"><p class="block-title__tag-line-test">Non-Executive Director</p>
+<h2 class="block-title__title-test">Mr. D.R Wijewardene </h2>
+<p class="testimonial-one__text">
+
+Mr. D.R. Wijewardene, a Non-Executive Director, holds a Bachelor’s Degree from the University of Sussex, UK. He also serves as a Director of R.S Printek (Private) Limited, closely related to our company. 
+
+</p><!-- /.testimonial-one__text -->
+<h4 class="testimonial-one__name"></h4>
+</p></div><!-- /.testimonial-one__single -->
+</div><!-- /.item -->
+<div class="item">
+<div class="testimonial-one__single">
+<div class="testimonial-one__image">
+<img alt="Image" decoding="async" src=""/>
+</div><!-- /.testimonial-one__image -->
+<p class="testimonial-one__text"><p class="block-title__tag-line-test">Independent Non-Executive Director/Senior Independent Director</p>
+<h2 class="block-title__title-test">Mr. Dilantha Stephen Seneviratne </h2>
+<p class="testimonial-one__text">
+
+Mr. Dilantha Stephen Seneviratne is a Fellow of the Institute of Chartered Accountants of Sri Lanka (FCA) and a Fellow of the Institute of Certified Management Accountants (FCMA) with over 36 years of post-qualifying experience in Finance, Corporate Management &amp; Commercial operations in the Plantation /Corporate sector.
+
+</p>
+<p class="testimonial-one__text">
+Mr. Seneviratne served as a Director at Hayleys Plantation Services (Pvt) Ltd and as Director/CEO of Talawakelle Tea Estates PLC. With over two decades of experience in Finance and Corporate Management, he has made a significant contribution to the plantation sector. In addition, he has over a decade of experience as a CEO, General Manager, and Financial Controller in diverse corporate sectors, including manufacturing, trading, logistics, and road construction.
+</p>
+<p class="testimonial-one__text">
+He was The Chairman of the CSR Steering Committee of Ceylon Chamber of Commerce. He has also served as a Trustee of the Plantation Trust Fund, Member of Employers Federation of Ceylon and Planters Association sub committees, and Steering Committee on IAS 41 – Agriculture of the Institute of Chartered Accountants of Sri Lanka. He has participated in national and overseas training programs and  Chairman/ Team leader on companywide quality and process improvement initiatives.         
+
+</p></p><!-- /.testimonial-one__text -->
+<h4 class="testimonial-one__name"></h4>
+</div><!-- /.testimonial-one__single -->
+</div><!-- /.item -->
+<div class="item">
+<div class="testimonial-one__single">
+<div class="testimonial-one__image">
+<img alt="Image" decoding="async" src=""/>
+</div><!-- /.testimonial-one__image -->
+<p class="testimonial-one__text"><p class="block-title__tag-line-test">Independent Non-Executive Director</p>
+<h2 class="block-title__title-test">Mr. Eraj de Silva  </h2>
+</p><!-- /.testimonial-one__text -->
+<h4 class="testimonial-one__name"></h4>
+</div><!-- /.testimonial-one__single -->
+</div><!-- /.item -->
+<div class="item">
+<div class="testimonial-one__single">
+<div class="testimonial-one__image">
+<img alt="Image" decoding="async" src=""/>
+</div><!-- /.testimonial-one__image -->
+<p class="testimonial-one__text"><p class="block-title__tag-line-test">
+Consultant
+
+</p>
+<h2 class="block-title__title-test">  
+Mr. D. V. Gunatunga
+</h2>
+<p class="testimonial-one__text">
+
+Mr. D. V. Gunatunga is a finance professional and senior Chartered Accountant. With a wealth of experience spanning decades, Mr. Gunatunga is a Fellow Member of both the Institute of Chartered Accountants of Sri Lanka and the Institute of Certified Management Accountants of Sri Lanka. He has held senior management positions and served as a director for public &amp; private companies  
+
+
+<p></p><!-- /.testimonial-one__text -->
+<h4 class="testimonial-one__name"></h4>
+</p></p></div><!-- /.testimonial-one__single -->
+</div><!-- /.item -->
+<div class="item">
+<div class="testimonial-one__single">
+<div class="testimonial-one__image">
+<img alt="Image" decoding="async" src=""/>
+</div><!-- /.testimonial-one__image -->
+<p class="testimonial-one__text"><p class="block-title__tag-line-test">
+Non-Executive Director
+
+</p>
+<h2 class="block-title__title-test">  
+Prof. Lakshman R. Watawala
+</h2>
+<p class="testimonial-one__text">
+
+Prof. Lakshman R. Watawala is a distinguished professional personality, holding fellowships with several prestigious institutes. He has served in pivotal roles, including Chairman and Managing Director of the Board of Investment of Sri Lanka, Chairman of People’s Bank, and as an advisor in the Ministry of Finance. Prof. Watawala is also actively involved on various boards of Public Quoted Companies.
+
+
+
+<p>
+<p class="testimonial-one__text">
+
+He is the President of the Institute of Certified Management Accountants of Sri Lanka and its founding president. He was a Past President of the Institute of Chartered Accountants of Sri Lanka, the South Asian Federation of Accountants, and The Organization of Professional Associations of Sri Lanka, which is the apex body of Professional Organizations. He was also the Founder President of the Association of Accounting Technicians of Sri Lanka.
+
+
+</p></p><!-- /.testimonial-one__text -->
+<h4 class="testimonial-one__name"></h4>
+</p></p></div><!-- /.testimonial-one__single -->
+</div><!-- /.item -->
+<div class="item">
+<div class="testimonial-one__single">
+<div class="testimonial-one__image">
+<img alt="Image" decoding="async" src=""/>
+</div><!-- /.testimonial-one__image -->
+<p class="testimonial-one__text"><p class="block-title__tag-line-test">
+Non-Executive Director
+
+</p>
+<h2 class="block-title__title-test">  
+Prof. Lakshman R. Watawala
+</h2>
+<p class="testimonial-one__text">
+
+Mr. R.C. Samarasinghe, a senior Chartered Accountant, has been on our board since March 2005. His extensive experience includes former key positions in prominent companies such as Textured Jersey Lanka PLC, Mobitel (Private) Limited, and Electronic Data Systems (Private) Limited, Singapore. He is a Fellow member of the Institute of Chartered Accountants of Sri Lanka.
+
+<p>
+</p><!-- /.testimonial-one__text -->
+<h4 class="testimonial-one__name"></h4>
+</p></p></div><!-- /.testimonial-one__single -->
+</div><!-- /.item -->
+<div class="item">
+<div class="testimonial-one__single">
+<div class="testimonial-one__image">
+<img alt="Image" decoding="async" src=""/>
+</div><!-- /.testimonial-one__image -->
+<p class="testimonial-one__text"><p class="block-title__tag-line-test">
+Executive Director
+
+</p>
+<h2 class="block-title__title-test">  
+Mr. P.S. Wijewardene 
+</h2>
+<p class="testimonial-one__text">
+
+Mr. P.S. Wijewardene holds a Master’s degree from the University of Leicester, UK, and has over 25 years of experience at Lake House Printers &amp; Publishers PLC.
+In addition to his role as a Director at Lake House Printers &amp; Publishers PLC, he serves as a Director of our fully owned subsidiary, LH Plantations (Private) Limited. He is also the Deputy Chairman of Wijeya Newspapers Limited.
+<p>
+</p><!-- /.testimonial-one__text -->
+<h4 class="testimonial-one__name"></h4>
+</p></p></div><!-- /.testimonial-one__single -->
+</div><!-- /.item -->
+</div><!-- /.testimonial-one__carousel -->
+</div><!-- /.container -->
+</section><!-- /.testimonial-one -->
+<!--End Testimonial Section -->
+</div>
+</div>
+</div>
+</div>
+<div class="elementor-element elementor-element-37ef56d e-flex e-con-boxed e-con e-parent" data-core-v316-plus="true" data-element_type="container" data-id="37ef56d">
+<div class="e-con-inner">
+<div class="elementor-element elementor-element-108eb27 elementor-widget elementor-widget-heading" data-element_type="widget" data-id="108eb27" data-widget_type="heading.default">
+<div class="elementor-widget-container">
+<h2 class="elementor-heading-title elementor-size-default">Executive Directors and Senior Management Team</h2> </div>
+</div>
+<div class="elementor-element elementor-element-52af4ae elementor-widget elementor-widget-dexen_testimonials_carousel" data-element_type="widget" data-id="52af4ae" data-widget_type="dexen_testimonials_carousel.default">
+<div class="elementor-widget-container">
+<section class="testimonial-one">
+<div class="container">
+<div class="testimonial-one__carousel owl-theme owl-carousel">
+<div class="item">
+<div class="testimonial-one__single">
+<div class="testimonial-one__image">
+<img alt="Image" decoding="async" src=""/>
+</div><!-- /.testimonial-one__image -->
+<p class="testimonial-one__text"><p class="block-title__tag-line-test">Executive Director – Security Printing Division</p>
+<h2 class="block-title__title-test">Mr. M.D.P.B.S. Wijayaratne</h2>
+<p class="testimonial-one__text">
+Mr. M. P. B. S. Wijerathne brings nearly four decades of experience in the printing industry. He joined Lake House Printers &amp; Publishers PLC in 1984 as a Trainee Printing Assistant. Over the years, he has steadily progressed through various leadership roles, being appointed Assistant Manager in 1992 and Manager in 1994. His continued dedication and expertise eventually led to his appointment as Executive Director of the Security Printing Division in 2023.
+Mr. Wijerathne has been instrumental in leading the division, overseeing its operations. He holds a Diploma in Printing, specializing in both Management and Technology, further strengthening his expertise in the field.
+
+</p>
+</p><!-- /.testimonial-one__text -->
+<h4 class="testimonial-one__name"></h4>
+</div><!-- /.testimonial-one__single -->
+</div><!-- /.item -->
+<div class="item">
+<div class="testimonial-one__single">
+<div class="testimonial-one__image">
+<img alt="Image" decoding="async" src=""/>
+</div><!-- /.testimonial-one__image -->
+<p class="testimonial-one__text"><p class="block-title__tag-line-test">Executive Director, Lake House Technologies Division</p>
+<h2 class="block-title__title-test">Mr. Tony Johnpillai</h2>
+<p class="testimonial-one__text">
+Mr. Tony Johnpillai, with over 28 years of experience in Sri Lanka’s financial technology sector, is a seasoned professional in the banking card and payment solutions industry. He began his career in 1995 with the country’s then first banking card manufacturer.
+Lake House Technologies Division (formerly designated and sometimes still referred to as the Security Cards Division) being one of the main divisions of the company, was set up by Mr. Johnpillai in the year 2007 and has now expanded into the dominant market player in Sri Lanka’s banking card industry.
+Under his leadership, the division has expanded its portfolio from Visa, MasterCard, JCB, and China UnionPay cards to the latest innovative solutions, such as wearable smart payment devices and contactless payment technologies. 
+Mr. Johnpillai has established strategic partnerships with global leaders like Thales, Giesecke+Devrient (G+D), and Manipal Technologies, further strengthening the company’s pre-eminent position in the industry.
+His leadership has fostered a high-performing team, driving Lake House Technologies to become a trusted name in payment solutions, committed to innovation and ethical business practices. He continues to steer the company toward future advancements in financial technology.
+
+</p></p><!-- /.testimonial-one__text -->
+<h4 class="testimonial-one__name"></h4>
+</div><!-- /.testimonial-one__single -->
+</div><!-- /.item -->
+<div class="item">
+<div class="testimonial-one__single">
+<div class="testimonial-one__image">
+<img alt="Image" decoding="async" src=""/>
+</div><!-- /.testimonial-one__image -->
+<p class="testimonial-one__text"><p class="block-title__tag-line-test">Chief Financial Officer</p>
+<h2 class="block-title__title-test"> Mrs. Rasinthaa Abeydheera </h2>
+<p class="testimonial-one__text">
+Mrs. Rasinthaa Abeydheera, a Senior Chartered Accountant, has been with the group for over 20 years and recently assumed the role of Chief Financial Officer of the Company.
+Throughout her distinguished career, she has held several key leadership positions in our organization and its related companies. Her previous roles include Chief Internal Auditor of Lake House Printers &amp; Publishers PLC, Chief Financial Officer of RS Printek (Pvt) Ltd, Head of Procurement Facilitation at Wijeya Newspapers Ltd, and Finance Consultant at Wijeya Networks (Pvt) Ltd.
+Mrs. Abeydheera is a Fellow Member of the Institute of Chartered Accountants of Sri Lanka (CA Sri Lanka), a Member of the Association of Chartered Certified Accountants (ACCA), and a Chartered Tax Advisor. Additionally, she is a Member of AAT Sri Lanka and holds a Bachelor of Science in Applied Accounting.
+
+</p></p><!-- /.testimonial-one__text -->
+<h4 class="testimonial-one__name"></h4>
+</div><!-- /.testimonial-one__single -->
+</div><!-- /.item -->
+<div class="item">
+<div class="testimonial-one__single">
+<div class="testimonial-one__image">
+<img alt="Image" decoding="async" src=""/>
+</div><!-- /.testimonial-one__image -->
+<p class="testimonial-one__text"><p class="block-title__tag-line-test">Deputy General Manager – Finance</p>
+<h2 class="block-title__title-test">Mr. T.A.U. Jinadasa</h2>
+<p class="testimonial-one__text">
+Mr. T. A. U. Jinadasa brings nearly four decades of dedicated service to Lake House Printers &amp; Publishers PLC. He joined the company in 1987 as an Accountant and, through his expertise and commitment, rose to the positions of Financial Controller and later Deputy General Manager Finance.
+Prior to joining Lake House Printers &amp; Publishers PLC, he began his career at a leading international audit firm in Sri Lanka, where he gained six years of invaluable experience.
+Mr. Jinadasa has successfully completed the final stages of the Institute of Chartered Accountants of Sri Lanka and the Chartered Institute of Management Accountants (UK).
+
+</p></p><!-- /.testimonial-one__text -->
+<h4 class="testimonial-one__name"></h4>
+</div><!-- /.testimonial-one__single -->
+</div><!-- /.item -->
+<div class="item">
+<div class="testimonial-one__single">
+<div class="testimonial-one__image">
+<img alt="Image" decoding="async" src=""/>
+</div><!-- /.testimonial-one__image -->
+<p class="testimonial-one__text"><p class="block-title__tag-line-test">Company Secretary</p>
+<h2 class="block-title__title-test">Mr. D.P. Anura Nishantha Kumara</h2>
+<p class="testimonial-one__text">
+Mr. D. P. Anura Nishantha Kumara is a seasoned legal professional. He has been serving as the Company Secretary for Lake House Printers &amp; Publishers PLC and its subsidiary, L. H. Plantations (Pvt) Ltd, since 1996.
+He graduated from the Faculty of Law, University of Colombo, in 1995 and was admitted as an Attorney-at-Law to the Supreme Court of Sri Lanka in 1998.
+In 1999, he obtained a Diploma in Human Resource Management from the Institute of Personnel Management, Sri Lanka.
+Mr. Kumara is a registered Company Secretary and a Notary Public.
+
+</p></p><!-- /.testimonial-one__text -->
+<h4 class="testimonial-one__name"></h4>
+</div><!-- /.testimonial-one__single -->
+</div><!-- /.item -->
+</div><!-- /.testimonial-one__carousel -->
+</div><!-- /.container -->
+</section><!-- /.testimonial-one -->
+<!--End Testimonial Section -->
+</div>
+</div>
+</div>
+</div>
+</div>
+<footer class="site-footer">
+<div class="elementor elementor-460" data-elementor-id="460" data-elementor-type="section">
+<section class="elementor-section elementor-top-section elementor-element elementor-element-a91eea8 footer-mdl elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-element_type="section" data-id="a91eea8" data-settings='{"background_background":"classic"}'>
+<div class="elementor-container elementor-column-gap-default">
+<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-1659e22" data-element_type="column" data-id="1659e22">
+<div class="elementor-widget-wrap elementor-element-populated">
+<div class="elementor-element elementor-element-ffb28e4 elementor-widget elementor-widget-text-editor" data-element_type="widget" data-id="ffb28e4" data-widget_type="text-editor.default">
+<div class="elementor-widget-container">
+<h3> <span style="color:#b0812c; font-family: inherit; font-size: 1.75rem;">Address</span></h3>
+<div class="footer-widget contact-widget">
+<!-- /.widget-title -->
+<p style="color:#b0812c; font-size: 16px; font-weight: 600;">Lake House Printers &amp; Publishers PLC</p>
+<p style="color: #b0812c; font-size: 16px; font-weight: 600; margin-top: 5px;">41, W A D Ramanayake Mawatha,</p>
+<p style="color:#b0812c; font-size: 16px; font-weight: 600; margin-top: 5px;">Colombo 00200.</p>
+</div>
+<div class="notranslate" style="all: initial;"></div> </div>
+</div>
+</div>
+</div>
+<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-6357f76" data-element_type="column" data-id="6357f76">
+<div class="elementor-widget-wrap elementor-element-populated">
+<div class="elementor-element elementor-element-ab61739 elementor-widget elementor-widget-text-editor" data-element_type="widget" data-id="ab61739" data-widget_type="text-editor.default">
+<div class="elementor-widget-container">
+<h3 style="color: #b0812c;">Inquiries</h3><div class="footer-widget contact-widget"><p><!-- /.widget-title --></p><p style="color: #b0812c; font-size: 16px; font-weight: 600;"><i class="fa fa-envelope"></i> – <a href="mailto:info@lakehppl.com">info@lakehppl.com </a></p><p style="color: #b0812c; font-size: 16px; font-weight: 600;"><i class="fa fa-whatsapp" style="font-size: 17px;"></i> <a href="https://wa.me/+94117683700" rel="noopener" style="color: #b0812c; font-size: 16px; font-weight: 600;" target="_blank">– </a><a href="https://wa.me/+94117683700">+94 117 683 700</a></p></div><div class="notranslate" style="all: initial;"> </div> </div>
+</div>
+</div>
+</div>
+<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-969749c" data-element_type="column" data-id="969749c">
+<div class="elementor-widget-wrap elementor-element-populated">
+<div class="elementor-element elementor-element-b39b436 elementor-widget elementor-widget-text-editor" data-element_type="widget" data-id="b39b436" data-widget_type="text-editor.default">
+<div class="elementor-widget-container">
+<div class="footer-widget d-none d-lg-block"><div class="widget-title"><h3 style="color: #b0812c;">Explore</h3></div><p><!-- /.widget-title --></p><ul class="link-list"><li><a href="/about-us" style="color: #b0812c;">About Us</a></li><li><a href="/contact-us" style="color: #b0812c;">Contact Us</a></li></ul><p><!-- /.link-list --></p></div> </div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+<div class="bottom-footer text-center">
+<div class="container">
+<div class="inner-container">
+<p>© All copyrights are reserved. 2019 <a href="http://smartdatasoft.com">Smartdatasoft</a>.</p> </div><!-- /.inner-container -->
+</div><!-- /.container -->
+</div><!-- /.bottom-footer -->
+</footer><!-- /.site-footer -->
+</div>
+<a class="scroll-to-target scroll-to-top" data-target="html" href="#"><i class="fa fa-angle-up"></i></a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+`;
+
 
 export default function AboutUsPage() {
   return <LegacyPage html={html} title="About Us \u2013 Lake House Printers & Publishers" bodyClass="page-id-75" isContact={false} />;
