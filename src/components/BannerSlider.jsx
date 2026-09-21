@@ -4,22 +4,22 @@ import './BannerSlider.css';
 const slides = [
   {
     id: 0,
-    image: '/wp-content/uploads/2025/03/slider.jpg',
+    image: '/wp-content/uploads/2025/02/card-slider-bbb.jpg',
     alt: 'Lake House Security Printing',
   },
   {
     id: 1,
-    image: '/wp-content/uploads/2024/10/slider-1-7-copy.jpg',
+    image: '/wp-content/uploads/2025/02/card-slider-vv.jpg',
     alt: 'Lake House Security Cards',
   },
     {
     id: 2,
-    image: '/wp-content/uploads/2025/03/3.jpg',
+    image: '/wp-content/uploads/2025/02/slider-1-7-copy.jpg',
     alt: 'Lake House Security Cards',
   },
       {
-    id: 2,
-    image: '/wp-content/uploads/2025/01/sp-2.png',
+    id: 3,
+    image: '/wp-content/uploads/2025/02/slider.jpg',
     alt: 'Lake House Security Cards',
   },
 ];
