@@ -1,0 +1,52 @@
+# =========================================================
+#  robots.txt — Lake House Printers & Publishers (LHPP)
+#  https://www.lhpp.lk/robots.txt
+# =========================================================
+
+# ---------------------------------------------------------
+#  Default rule: allow all well-behaved crawlers
+# ---------------------------------------------------------
+User-agent: *
+Allow: /
+
+# Block internal / non-public paths only
+Disallow: /api/
+
+# ---------------------------------------------------------
+#  Google-specific rules
+# ---------------------------------------------------------
+User-agent: Googlebot
+Allow: /
+
+# Allow Google Images to crawl real image assets
+User-agent: Googlebot-Image
+Allow: /wp-content/uploads/
+
+# ---------------------------------------------------------
+#  Bing-specific rules
+# ---------------------------------------------------------
+User-agent: bingbot
+Allow: /
+
+# ---------------------------------------------------------
+#  Block known bad / scraper bots
+# ---------------------------------------------------------
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: PetalBot
+Disallow: /
+
+# ---------------------------------------------------------
+#  Sitemap location
+# ---------------------------------------------------------
+Sitemap: https://www.lhpp.lk/sitemap.xml
