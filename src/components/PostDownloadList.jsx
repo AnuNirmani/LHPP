@@ -20,6 +20,7 @@ export default function PostDownloadList({ categoryTypeId, variant = 'cards' }) 
     fetchPostsByCategoryTypeId(categoryTypeId)
       .then((data) => {
         if (!cancelled) setPosts(data);
+        //if (!cancelled) setPosts([...data].reverse());
       })
       .catch((err) => {
         if (!cancelled) setError(err);

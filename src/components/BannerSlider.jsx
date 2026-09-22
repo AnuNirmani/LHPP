@@ -24,8 +24,8 @@ const slides = [
   },
 ];
 
-const SLIDE_INTERVAL_MS = 3000;
-const ANIMATION_DURATION_MS = 850;
+const SLIDE_INTERVAL_MS = 4800;
+const ANIMATION_DURATION_MS = 1000;
 
 export default function BannerSlider() {
   const [activeIndex, setActiveIndex] = useState(0);
