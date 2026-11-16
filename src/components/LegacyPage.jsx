@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import { SiteFooter, SiteHeader } from './SiteChrome';
 
 const vendorScripts = [
   '/wp-includes/js/jquery/jquery.min.js',
@@ -88,5 +89,16 @@ export default function LegacyPage({ html, title, bodyClass, isContact = false }
     return () => { cancelled = true; };
   }, [title, bodyClass, isContact]);
 
-  return <div className="lhp-react-page" dangerouslySetInnerHTML={{ __html: html }} />;
+  const contentHtml = html
+    .replace(/<header[\s\S]*?<\/header>/i, '')
+    .replace(/<footer[\s\S]*?<\/footer>/i, '')
+    .replace(/<a class="scroll-to-target scroll-to-top"[\s\S]*?<\/a>/i, '');
+
+  return (
+    <div className="lhp-react-page">
+      <SiteHeader />
+      <div dangerouslySetInnerHTML={{ __html: contentHtml }} />
+      <SiteFooter />
+    </div>
+  );
 }
