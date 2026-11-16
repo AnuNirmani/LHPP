@@ -35,39 +35,45 @@ const categories = ['All Books', 'Legal', 'Educational', 'Other'];
 
 function Header() {
   return (
-    <header className="new-atlas-header">
-      <div className="new-atlas-topbar">
-        <div className="new-atlas-logo">
-          <a href="/"><img src="/wp-content/uploads/2024/04/cropped-logo-1-1.png" alt="Lake House Printers &amp; Publishers" /></a>
-          <strong>Lake House Printers and Publishers PLC</strong>
+    <header className="site-header header-one header-style-two">
+      <div className="top-bar"><div className="container">
+        <div className="social-block social-font-wesome-problem">&nbsp;</div>
+        <div className="logo-block" style={{ textAlign: 'center' }}>
+          <a className="custom-logo-link" href="/" rel="home"><img alt="Lake House Printers &amp; Publishers" className="custom-logo" decoding="async" height="75" src="/wp-content/uploads/2024/04/cropped-logo-1-1.png" width="102" /></a>
+          <br />
+          <small className="logo-hd d-none d-lg-block" style={{ color: '#000' }}><strong>Lake House Printers and Publishers PLC</strong></small>
         </div>
-        <div className="new-atlas-contact">
-          <a href="mailto:info@lakehppl.com">✉ info@lakehppl.com</a>
-          <a href="https://wa.me/+94117683700">◉ +94 117 683 700</a>
+        <small className="logo-hd d-lg-none w-100" style={{ color: '#000', textAlign: 'center', marginTop: '-20px' }}><strong>Lake House Printers and Publishers PLC</strong></small>
+        <div className="right-block">
+          <a href="mailto:info@lakehppl.com"><i className="fa fa-envelope" />info@lakehppl.com</a><br />
+          <a href="https://wa.me/+94117683700"><i className="fa fa-whatsapp" style={{ color: '', fontSize: '17px' }} />+94 117 683 700</a>
         </div>
-      </div>
-      <nav className="new-atlas-nav" aria-label="Primary navigation">
-        <a href="/">Home</a>
-        <span className="new-atlas-nav__dropdown">
-          <span className="new-atlas-nav__current">Divisions</span>
-          <span className="new-atlas-nav__menu">
-            <a href="/security-printing-division">Security Printing</a>
-            <a href="/lake-house-technologies-division">Lake House Technologies</a>
-            <a href="/lake-house-atlas-division">Lake House Atlas</a>
-            <a href="/new-atlas">New Atlas</a>
-          </span>
-        </span>
-        <a href="/about-us">About Us</a>
-        <a href="/contact-us">Contact Us</a>
-        <span className="new-atlas-nav__dropdown">
-          <a href="/company-secretarial">Company Secretarial</a>
-          <span className="new-atlas-nav__menu new-atlas-nav__menu--wide">
-            <a href="/interim-accounts">Interim Accounts</a>
-            <a href="/annual-reports">Annual Reports</a>
-            <a href="/audit-committee">Audit Committee</a>
-            <a href="/general">General</a>
-          </span>
-        </span>
+      </div></div>
+      <nav className="navbar navbar-expand-lg navbar-light header-navigation stricky">
+        <div className="container clearfix">
+          <div className="logo-box clearfix"><button className="menu-toggler" data-target="#main-nav-bar" style={{ boxShadow: 'rgba(100, 100, 111, 0.2) 0px 7px 29px 0px', backgroundColor: '#fff', borderRadius: '5px', padding: '4px 7px', border: '1px solid #eeeeee' }}><span className="fa fa-bars" /></button></div>
+          <div className="main-navigation" id="main-nav-bar">
+            <ul className="navigation-box" id="menu-primary-menu">
+              <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-25"><a href="/">Home</a></li>
+              <li className="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children menu-item-1026"><a href="#">Divisions</a>
+                <ul className="sub-menu">
+                  <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-1029"><a href="/security-printing-division">Security Printing</a></li>
+                  <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-1028"><a href="/lake-house-technologies-division">Lake House Technologies</a></li>
+                  <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-1027"><a href="/lake-house-atlas-division">Lake House Atlas</a></li>
+                  <li className="menu-item menu-item-type-post_type menu-item-object-page current-menu-item current_page_item menu-item-new-atlas"><a aria-current="page" href="/new-atlas">New Atlas</a></li>
+                </ul>
+              </li>
+              <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-140"><a href="/about-us">About Us</a></li>
+              <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-74"><a href="/contact-us">Contact Us</a></li>
+              <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1740"><a href="/company-secretarial">Company Secretarial</a>
+                <ul className="sub-menu">
+                  <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-1716"><a href="/interim-accounts">Interim Accounts</a></li><li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-1714"><a href="/annual-reports">Annual Reports</a></li><li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-1715"><a href="/audit-committee">Audit Committee</a></li><li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-1718"><a href="/related-party-transactions-committee">Related Party Transactions Committee</a></li><li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-1719"><a href="/remuneration-committee">Remuneration Committee</a></li><li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-1717"><a href="/nomination-and-governance-committee">Nomination and Governance Committee</a></li><li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-1720"><a href="/general">General</a></li><li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-2212"><a href="/policies-on-corporate-governance">Policies on Corporate Governance</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div className="right-side-box"><div className="header__social-block">&nbsp;</div></div>
+        </div>
       </nav>
     </header>
   );
@@ -80,7 +86,7 @@ export default function NewAtlasPage() {
 
   useEffect(() => {
     document.title = 'New Atlas – Lake House Printers & Publishers';
-    document.body.className = 'new-atlas-body';
+    document.body.className = 'page-id-870 new-atlas-body';
     window.scrollTo(0, 0);
     return () => { document.body.className = ''; };
   }, []);
@@ -137,8 +143,9 @@ export default function NewAtlasPage() {
 
         <section className="new-atlas-section new-atlas-overview" id="overview">
           <div>
-            <span className="new-atlas-index">01 / OUR COLLECTION</span>
+            <span className="new-atlas-index">01 / WHO WE ARE</span>
             <h2>A publishing partner for <em>generations of readers.</em></h2>
+            <p className="new-atlas-overview__lead">The Publishing Division of Lake House Printers &amp; Publishers PLC focuses primarily on publishing legal, professional and educational books. Our aim is to keep the tradition of reading alive by producing high-quality publications that inform, educate and endure.</p>
           </div>
           <div className="new-atlas-overview__copy">
             <p>We seek to serve professionals, academics, students and readers with reliable and authoritative knowledge to help them excel in their respective fields. At the same time, we strive to provide authors with a publishing partner they can trust and rely upon.</p>
@@ -160,9 +167,9 @@ export default function NewAtlasPage() {
           <div className="new-atlas-history">
             <div className="new-atlas-history__rail"><span>1945</span><span>2025</span></div>
             <div className="new-atlas-history__content">
-              <article><span>Early legacy · 1945</span><h3>Rooted in Sri Lankan literature</h3><p>The late Mr. D. R. Wijewardene, the founder and Chairman of Associated Newspapers of Ceylon Limited, had a deep interest in preserving and promoting Sinhala literature. His commitment to publishing began well before the establishment of the Book Publishing Department in 1945.</p></article>
-              <article><span>The years that followed</span><h3>A landmark for generations of readers</h3><p>Following the acquisition of Associated Newspapers of Ceylon Limited by the Government, publishing operations continued under Lake House Investments Limited. Under the chairmanship of Mr. R. S. Wijewardene, the company maintained a highly successful publishing operation for several decades.</p><p>The renowned Lake House Book Shop served generations of readers and became a landmark destination for books in Sri Lanka.</p></article>
-              <article><span>Stamford Lake · 2021</span><h3>A respected name in legal publishing</h3><p>Stamford Lake developed a strong reputation among legal professionals and scholars for its extensive range of legal and other publications. In 2021, Lake House Printers &amp; Publishers PLC divested its shareholding in Stamford Lake.</p></article>
+              <article><span>Early legacy · 1945</span><h3>Rooted in Sri Lankan literature</h3><p>The late Mr. D. R. Wijewardene, the founder and Chairman of Associated Newspapers of Ceylon Limited, had a deep interest in preserving and promoting Sinhala literature. His commitment to publishing began well before the establishment of the Book Publishing Department in 1945 at Associated Newspapers of Ceylon Limited.</p></article>
+              <article><span>The years that followed</span><h3>A landmark for generations of readers</h3><p>Following the acquisition of Associated Newspapers of Ceylon Limited by the Government, publishing operations continued under Lake House Investments Limited, a closely associated company of Lake House Printers &amp; Publishers PLC. Under the chairmanship of Mr. R. S. Wijewardene, the company maintained a highly successful publishing operation for several decades.</p><p>The renowned Lake House Book Shop, which served generations of readers and became a landmark destination for books in Sri Lanka, was also operated by Lake House Investments Limited.</p></article>
+              <article><span>Stamford Lake · 2021</span><h3>A respected name in legal publishing</h3><p>In more recent years, Stamford Lake (Pvt) Limited, a well-known name in Sri Lanka&apos;s publishing industry, developed a strong reputation among legal professionals and scholars for its extensive range of legal and other publications. Stamford Lake was established as a Joint Venture between Lake House Printers &amp; Publishers PLC and Stamford Press Pvt. Ltd., Singapore. In 2021, Lake House Printers &amp; Publishers PLC divested its shareholding in Stamford Lake.</p></article>
               <article><span>August 2025</span><h3>The Publishing Division begins a new chapter</h3><p>Following the cessation of Stamford Lake&apos;s operations, the Publishing Division of Lake House Printers &amp; Publishers PLC was established in August 2025, with selected titles and stock taken over from Stamford Lake.</p></article>
               <article><span>More than five decades</span><h3>The iconic Lake House Atlas series</h3><p>Lake House Printers &amp; Publishers PLC has been publishing the iconic Lake House Atlas series in Sinhala, English and Tamil for more than five decades.</p></article>
             </div>
@@ -246,14 +253,55 @@ export default function NewAtlasPage() {
           <div className="new-atlas-gallery__grid"><img src="/wp-content/uploads/2024/10/at-1.jpg" alt="Student studying an atlas" /><div><img src="/wp-content/uploads/2024/10/at-2.jpg" alt="Atlas pages and illustrations" /><img src="/wp-content/uploads/2024/10/at-4.jpg" alt="Lake House Atlas covers" /></div></div>
         </section>
       </main>
-      <footer className="new-atlas-footer">
-        <div className="new-atlas-footer__columns">
-          <section><h3>Address</h3><p>Lake House Printers &amp; Publishers PLC</p><p>41, W A D Ramanayake Mawatha,</p><p>Colombo 00200.</p></section>
-          <section><h3>Inquiries</h3><p><a href="mailto:info@lakehppl.com">✉ – info@lakehppl.com</a></p><p><a href="https://wa.me/+94117683700">◉ – +94 117 683 700</a></p></section>
-          <section><h3>Explore</h3><p><a href="/about-us">About Us</a></p><p><a href="/contact-us">Contact Us</a></p></section>
+      <footer className="site-footer">
+        <div className="elementor elementor-460" data-elementor-id="460" data-elementor-type="section">
+          <section className="elementor-section elementor-top-section elementor-element elementor-element-a91eea8 footer-mdl elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-element_type="section" data-id="a91eea8" data-settings={{ background_background: 'classic' }}>
+            <div className="elementor-container elementor-column-gap-default">
+              <div className="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-1659e22" data-element_type="column" data-id="elementor-element-1659e22">
+                <div className="elementor-widget-wrap elementor-element-populated">
+                  <div className="elementor-element elementor-element-ffb28e4 elementor-widget elementor-widget-text-editor" data-element_type="widget" data-id="ffb28e4" data-widget_type="text-editor.default">
+                    <div className="elementor-widget-container">
+                      <h3>&nbsp;<span style={{ color: '#b0812c', fontFamily: 'inherit', fontSize: '1.75rem' }}>Address</span></h3>
+                      <div className="footer-widget contact-widget">
+                        <p style={{ color: '#b0812c', fontSize: '16px', fontWeight: 600 }}>Lake House Printers &amp; Publishers PLC</p>
+                        <p style={{ color: '#b0812c', fontSize: '16px', fontWeight: 600, marginTop: '5px' }}>41, W A D Ramanayake Mawatha,</p>
+                        <p style={{ color: '#b0812c', fontSize: '16px', fontWeight: 600, marginTop: '5px' }}>Colombo 00200.</p>
+                      </div>
+                      <div className="notranslate" style={{ all: 'initial' }} />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-6357f76" data-element_type="column" data-id="elementor-element-6357f76">
+                <div className="elementor-widget-wrap elementor-element-populated">
+                  <div className="elementor-element elementor-element-ab61739 elementor-widget elementor-widget-text-editor" data-element_type="widget" data-id="ab61739" data-widget_type="text-editor.default">
+                    <div className="elementor-widget-container">
+                      <h3 style={{ color: '#b0812c' }}>Inquiries</h3>
+                      <div className="footer-widget contact-widget">
+                        <p />
+                        <p style={{ color: '#b0812c', fontSize: '16px', fontWeight: 600 }}><i className="fa fa-envelope" /> – <a href="mailto:info@lakehppl.com" style={{ color: '#b0812c' }}>info@lakehppl.com </a></p>
+                        <p style={{ color: '#b0812c', fontSize: '16px', fontWeight: 600 }}><i className="fa fa-whatsapp" style={{ fontSize: '17px' }} /> <a href="https://wa.me/+94117683700" rel="noopener" style={{ color: '#b0812c', fontSize: '16px', fontWeight: 600 }}>– </a><a href="https://wa.me/+94117683700">+94 117 683 700</a></p>
+                      </div>
+                      <div className="notranslate" style={{ all: 'initial' }} />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-969749c" data-element_type="column" data-id="elementor-element-969749c">
+                <div className="elementor-widget-wrap elementor-element-populated">
+                  <div className="elementor-element elementor-element-b39b436 elementor-widget elementor-widget-text-editor" data-element_type="widget" data-id="b39b436" data-widget_type="text-editor.default">
+                    <div className="elementor-widget-container">
+                      <div className="footer-widget d-none d-lg-block"><div className="widget-title"><h3 style={{ color: '#b0812c' }}>Explore</h3></div><ul className="link-list"><li><a href="/about-us" style={{ color: '#b0812c' }}>About Us</a></li><li><a href="/contact-us" style={{ color: '#b0812c' }}>Contact Us</a></li></ul></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
         </div>
-        <div className="new-atlas-footer__bottom">© All copyrights are reserved. 2019 <a href="http://smartdatasoft.com">Smartdatasoft</a>.</div>
+        <div className="bottom-footer text-center"><div className="container"><div className="inner-container"><p>© All copyrights are reserved. 2019 <a href="http://smartdatasoft.com">Smartdatasoft</a>.</p></div></div></div>
       </footer>
+      <a className="scroll-to-target scroll-to-top" data-target="html" href="#"><i className="fa fa-angle-up" /></a>
     </div>
   );
 }
