@@ -35,6 +35,7 @@ const html = String.raw`
 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1029" id="menu-item-1029"><a href="/security-printing-division">Security Printing</a></li>
 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1028" id="menu-item-1028"><a href="/lake-house-technologies-division">Lake House Technologies</a></li>
 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1027" id="menu-item-1027"><a href="/lake-house-atlas-division">Lake House Atlas</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-new-atlas"><a href="/new-atlas">New Atlas</a></li>
 </ul>
 </li>
 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-140" id="menu-item-140"><a href="/about-us">About Us</a></li>

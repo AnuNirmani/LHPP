@@ -1,6 +1,7 @@
 import { lazy, Suspense } from 'react';
 
 const AboutUsPage = lazy(() => import('./pages/AboutUsPage.jsx'));
+const AtlasPage = lazy(() => import('./pages/AtlasPage.jsx'));
 const AnnualReportsPage = lazy(() => import('./pages/AnnualReportsPage.jsx'));
 const AuditCommitteePage = lazy(() => import('./pages/AuditCommitteePage.jsx'));
 const CompanySecretarialPage = lazy(() => import('./pages/CompanySecretarialPage.jsx'));
@@ -9,6 +10,7 @@ const GeneralPage = lazy(() => import('./pages/GeneralPage.jsx'));
 const HomePage = lazy(() => import('./pages/HomePage.jsx'));
 const InterimAccountsPage = lazy(() => import('./pages/InterimAccountsPage.jsx'));
 const LakeHouseAtlasDivisionPage = lazy(() => import('./pages/LakeHouseAtlasDivisionPage.jsx'));
+const NewAtlasPage = lazy(() => import('./pages/NewAtlasPage.jsx'));
 const LakeHouseTechnologiesDivisionPage = lazy(() => import('./pages/LakeHouseTechnologiesDivisionPage.jsx'));
 const NominationAndGovernanceCommitteePage = lazy(() => import('./pages/NominationAndGovernanceCommitteePage.jsx'));
 const PoliciesOnCorporateGovernancePage = lazy(() => import('./pages/PoliciesOnCorporateGovernancePage.jsx'));
@@ -19,6 +21,8 @@ const SecurityPrintingDivisionPage = lazy(() => import('./pages/SecurityPrinting
 const routes = {
   "/about-us": AboutUsPage,
   "/about-us.html": AboutUsPage,
+  "/atlas": AtlasPage,
+  "/atlas.html": AtlasPage,
   "/annual-reports": AnnualReportsPage,
   "/annual-reports.html": AnnualReportsPage,
   "/audit-committee": AuditCommitteePage,
@@ -34,6 +38,8 @@ const routes = {
   "/interim-accounts.html": InterimAccountsPage,
   "/lake-house-atlas-division": LakeHouseAtlasDivisionPage,
   "/lake-house-atlas-division.html": LakeHouseAtlasDivisionPage,
+  "/new-atlas": NewAtlasPage,
+  "/new-atlas.html": NewAtlasPage,
   "/lake-house-technologies-division": LakeHouseTechnologiesDivisionPage,
   "/lake-house-technologies-division.html": LakeHouseTechnologiesDivisionPage,
   "/nomination-and-governance-committee": NominationAndGovernanceCommitteePage,
