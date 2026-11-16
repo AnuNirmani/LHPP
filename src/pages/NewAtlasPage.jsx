@@ -34,8 +34,15 @@ const books = [
 const categories = ['All Books', 'Legal', 'Educational', 'Other'];
 
 function Header() {
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [openSubmenus, setOpenSubmenus] = useState({ divisions: false, secretarial: false });
+
+  const toggleSubmenu = (submenu) => {
+    setOpenSubmenus((current) => ({ ...current, [submenu]: !current[submenu] }));
+  };
+
   return (
-    <header className="site-header header-one header-style-two">
+    <header className={`site-header header-one header-style-two${menuOpen ? ' menu-open' : ''}`}>
       <div className="top-bar"><div className="container">
         <div className="social-block social-font-wesome-problem">&nbsp;</div>
         <div className="logo-block" style={{ textAlign: 'center' }}>
@@ -51,11 +58,11 @@ function Header() {
       </div></div>
       <nav className="navbar navbar-expand-lg navbar-light header-navigation stricky">
         <div className="container clearfix">
-          <div className="logo-box clearfix"><button className="menu-toggler" data-target="#main-nav-bar" style={{ boxShadow: 'rgba(100, 100, 111, 0.2) 0px 7px 29px 0px', backgroundColor: '#fff', borderRadius: '5px', padding: '4px 7px', border: '1px solid #eeeeee' }}><span className="fa fa-bars" /></button></div>
+          <div className="logo-box clearfix"><button className="menu-toggler" type="button" aria-label="Toggle navigation" aria-expanded={menuOpen} onClick={() => setMenuOpen((open) => !open)} style={{ boxShadow: 'rgba(100, 100, 111, 0.2) 0px 7px 29px 0px', backgroundColor: '#fff', borderRadius: '5px', padding: '4px 7px', border: '1px solid #eeeeee' }}><span className={menuOpen ? 'fa fa-times' : 'fa fa-bars'} /></button></div>
           <div className="main-navigation" id="main-nav-bar">
             <ul className="navigation-box" id="menu-primary-menu">
               <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-25"><a href="/">Home</a></li>
-              <li className="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children menu-item-1026"><a href="#">Divisions</a>
+              <li className={`menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children menu-item-1026${openSubmenus.divisions ? ' submenu-open' : ''}`}><a href="#">Divisions</a><button type="button" className="submenu-toggle" aria-label="Toggle Divisions submenu" aria-expanded={openSubmenus.divisions} onClick={() => toggleSubmenu('divisions')} />
                 <ul className="sub-menu">
                   <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-1029"><a href="/security-printing-division">Security Printing</a></li>
                   <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-1028"><a href="/lake-house-technologies-division">Lake House Technologies</a></li>
@@ -65,7 +72,7 @@ function Header() {
               </li>
               <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-140"><a href="/about-us">About Us</a></li>
               <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-74"><a href="/contact-us">Contact Us</a></li>
-              <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1740"><a href="/company-secretarial">Company Secretarial</a>
+              <li className={`menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1740${openSubmenus.secretarial ? ' submenu-open' : ''}`}><a href="/company-secretarial">Company Secretarial</a><button type="button" className="submenu-toggle" aria-label="Toggle Company Secretarial submenu" aria-expanded={openSubmenus.secretarial} onClick={() => toggleSubmenu('secretarial')} />
                 <ul className="sub-menu">
                   <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-1716"><a href="/interim-accounts">Interim Accounts</a></li><li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-1714"><a href="/annual-reports">Annual Reports</a></li><li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-1715"><a href="/audit-committee">Audit Committee</a></li><li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-1718"><a href="/related-party-transactions-committee">Related Party Transactions Committee</a></li><li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-1719"><a href="/remuneration-committee">Remuneration Committee</a></li><li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-1717"><a href="/nomination-and-governance-committee">Nomination and Governance Committee</a></li><li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-1720"><a href="/general">General</a></li><li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-2212"><a href="/policies-on-corporate-governance">Policies on Corporate Governance</a></li>
                 </ul>
@@ -83,6 +90,7 @@ export default function NewAtlasPage() {
   const [category, setCategory] = useState('All Books');
   const [heroSlide, setHeroSlide] = useState(0);
   const [heroPaused, setHeroPaused] = useState(false);
+  const [headerScrolled, setHeaderScrolled] = useState(false);
 
   useEffect(() => {
     document.title = 'New Atlas – Lake House Printers & Publishers';
@@ -99,12 +107,19 @@ export default function NewAtlasPage() {
     return () => window.clearInterval(interval);
   }, [heroPaused]);
 
+  useEffect(() => {
+    const handleScroll = () => setHeaderScrolled(window.scrollY > 10);
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    handleScroll();
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   const visibleBooks = category === 'All Books'
     ? books
     : books.filter(([, , , bookCategory]) => bookCategory === category);
 
   return (
-    <div className="new-atlas-page">
+    <div className={`new-atlas-page${headerScrolled ? ' is-header-scrolled' : ''}`}>
       <Header />
       <main>
         <section className="new-atlas-hero" aria-label="New Atlas introduction">
