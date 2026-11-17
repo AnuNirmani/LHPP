@@ -1,7 +1,7 @@
 import { lazy, Suspense } from 'react';
 
 const AboutUsPage = lazy(() => import('./pages/AboutUsPage.jsx'));
-const AtlasPage = lazy(() => import('./pages/AtlasPage.jsx'));
+const AtlasPage = lazy(() => import('./pages/NewAtlasPage.jsx'));
 const AnnualReportsPage = lazy(() => import('./pages/AnnualReportsPage.jsx'));
 const AuditCommitteePage = lazy(() => import('./pages/AuditCommitteePage.jsx'));
 const CompanySecretarialPage = lazy(() => import('./pages/CompanySecretarialPage.jsx'));

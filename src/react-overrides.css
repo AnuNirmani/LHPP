@@ -16,3 +16,28 @@ body { margin: 0; }
   visibility: visible !important;
   opacity: 1 !important;
 }
+
+.header-navigation ul.navigation-box > li.menu-item-has-children > a::after {
+  display: none;
+}
+
+.header-navigation .submenu-toggle {
+  appearance: none;
+  background: transparent;
+  border: 0;
+  color: #b0812c;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 0;
+  height: 20px;
+  margin-left: 6px;
+  padding: 0;
+  vertical-align: middle;
+  width: 16px;
+}
+
+.header-navigation .submenu-toggle::after {
+  content: '\f107';
+  font-family: FontAwesome;
+  font-size: 14px;
+}
