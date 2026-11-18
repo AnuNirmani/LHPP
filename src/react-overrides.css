@@ -41,3 +41,32 @@ body { margin: 0; }
   font-family: FontAwesome;
   font-size: 14px;
 }
+
+@media (max-width: 960px) {
+  .site-header.menu-open .header-navigation .main-navigation {
+    display: block;
+  }
+
+  .header-navigation .navigation-box > li.menu-item-has-children {
+    position: relative;
+  }
+
+  .header-navigation .navigation-box > li.menu-item-has-children > .submenu-toggle {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+  }
+
+  .header-navigation .navigation-box > li.menu-item-has-children > .sub-menu {
+    display: none !important;
+    opacity: 1 !important;
+    position: relative !important;
+    visibility: visible !important;
+  }
+
+  .header-navigation .navigation-box > li.menu-item-has-children.submenu-open > .sub-menu {
+    display: block !important;
+  }
+}

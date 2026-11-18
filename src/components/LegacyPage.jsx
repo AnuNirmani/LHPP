@@ -7,7 +7,6 @@ const vendorScripts = [
   '/wp-content/themes/dexen/assets/js/bootstrap.bundle.min.js',
   '/wp-content/themes/dexen/assets/js/jquery.counterup.min.js',
   '/wp-content/themes/dexen/assets/js/waypoints.min.js',
-  '/wp-content/themes/dexen/assets/js/theme.js',
   '/wp-content/plugins/dexen-core/elementor-addons/assets/js/owl.carousel.min.js',
   '/wp-content/plugins/dexen-core/elementor-addons/assets/js/swiper.min.js',
   '/wp-content/plugins/dexen-core/elementor-addons/assets/js/addons-script.js',
